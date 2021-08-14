@@ -140,3 +140,15 @@ Successful actions and unsuccessful actions will be flagged with django messages
 
 ### Wireframes
 A mock-up of how the site will be laid out is available here via [Wire Frames](read-me/booknook.pdf).
+
+### Database Structure
+
+![Database Structure]()
+
+TBC
+
+### Security
+
+Sensitive data such as SECRET_KEYS were stored on heroku using config variables to prevent unwanted connections to the database.
+
+Django allauth was used to set up user authentication and built in decorators allowed restricted access to certain features on the website.
