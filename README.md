@@ -43,19 +43,62 @@ The live site can be accessed [*here*](INSERT HERE).
     * [Code](#Code)
     * [Content](#Content)
     * [Acknowledgements](#Acknowledgements)
+## Strategic Purpose Overview
 
-    ## Strategic Purpose Overview
+Karma Yoga is a full stack e-commerce web application for a theoretical yoga studio. The site as well as being an informative marketing tool, also facilitates the sale of class passes and yoga equipment available at the studio. Consumers will be able to purchase class passes to allow them entry to class or purchase equipment they may require for their yoga practice. Registered users will be able to save, update and delete their information and view past orders on a profile, as well as save their favourite products/passes for ease of access in the future. The site will also facilitate a means of contact to the studio via a contact form. The administrator will be able to update, edit and delete products from the frontend and monitor orders and users information from the backend.
 
-    Karma Yoga is a full stack e-commerce web application for a theoretical yoga studio. The site as well as being an informative marketing tool, also facilitates the sale of class passes and yoga equipment available at the studio. Consumers will be able to purchase class passes to allow them entry to class or purchase equipment they may require for their yoga practice. Registered users will be able to save, update and delete their information and view past orders on a profile, as well as save their favourite products/passes for ease of access in the future. The site will also facilitate a means of contact to the studio via a contact form. The administrator will be able to update, edit and delete products from the frontend and monitor orders and users information from the backend.
+Karma Yoga is a fully responsive data driven application using HTML, CSS, JavaScript, Python, Django Frameworks, a Postgres relational database and Stripe Payment technology. The user interface is based on the principles of good UX design. The application is cloud hosted via AWS and Heroku.
 
-    Karma Yoga is a fully responsive data driven application using HTML, CSS, JavaScript, Python, Django Frameworks, a Postgres relational database and Stripe Payment technology. The user interface is based on the principles of good UX design. The application is cloud hosted via AWS and Heroku.
+### Design Simulation
 
-    ### Design Simulation
+A simulation of the website on desktop and mobile devices can be seen below.
 
-    A simulation of the website on desktop and mobile devices can be seen below.
+![Design Simulation]()
 
-    ![Design Simulation]()
+ The live site can be accessed [*here*]().
 
-    The live site can be accessed [*here*]().
+*Please note: To open any links in this document in a new browser tab, please press `CTRL + Click`.*
 
-    *Please note: To open any links in this document in a new browser tab, please press `CTRL + Click`.*
+## User Experience Design
+
+### User Stories
+
+#### Anonoumous User
+
+| **As an anonoumous I would like to ** : |  **So that I can**  : |
+| ------------- |:-------------:|
+| easily understand the main purpose of the site | determine if it is what I need |
+| use an aesthetically pleasing site| enjoy my user experience |
+| easily navigate the site| quickly find what I need |
+| find information is clearly presented | absorb it with minimal effort |
+| view the site on different screen sizes| use it on a desktop or on the go |
+| view/search products and class passes | find items quickly |
+| purchase products/class passes online | save time & travel expense |
+| contact the studio on their site | enquire without opening a secondary platform |
+
+#### Registered User
+
+A registered users goals are in addition to the above mentioned user goals.
+
+| **As a registered user I would like to ** : |  **So that I can**  : |
+| ------------- |:-------------:|
+| save my information to a profile | use it again easily |
+| edit/delete my profile | manage my information |
+| view past orders | keep track of them |
+| be able to favourite items to my profile | access them easily for re-purchase or review |
+
+#### Business Objective / Admin User
+
+| **As an admin user I would like to ** : |  **So that I can**  : |
+| ------------- |:-------------:|
+|  have an informative web application | use it as a marketing tool |
+|  sell products and class passes | generate revenue |
+|  have a record of user/student information | use it for marketing and other business purposes |
+|  have a contact form on the app | manage enquiries via email only |
+|  upload, edit and delete products through the frontend | manage stock and product/service offering over time |
+
+
+
+
+
+
