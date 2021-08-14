@@ -127,3 +127,16 @@ The profile page will display user information derived from the form, past order
 The products page will display all products/class passes and be searchable.
 
 The product detail page will display the image and details with an option to purchase or update/delete for the admin user.
+
+**Interaction Design**
+
+The nav bar items will highlight on hover.
+
+The user will be able to interact with the data on the application via the search bar, products will display below the search bar if found or a message with an error if not found.
+
+All forms will validate and change colour/display messages to notify the user of errors.
+
+Successful actions and unsuccessful actions will be flagged with django messages to the user.
+
+### Wireframes
+A mock-up of how the site will be laid out is available here via [Wire Frames](read-me/booknook.pdf).
