@@ -180,3 +180,11 @@ The logo and class passes were created using [canva.com](https://www.canva.com/)
 Product images are from [alibaba.com](https://www.alibaba.com/).
 
 For a detailed list of image sources please see the [credits](#credits) section.
+
+### Design Limitations
+
+Future features will include:
+
+>   * An online booking system
+>   * A chat forum for members of workshops or training courses at the studio
+
