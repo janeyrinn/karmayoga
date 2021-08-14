@@ -114,4 +114,16 @@ A registered users goals are in addition to the above mentioned user goals.
 * Contact functionality
 * E-Commerce functionality
 
+**Skeleton Structure**
 
+This application will be made up of 11 "pages" derived or based around 4 data models, product/class pass, user profile, contact form and favourites.
+
+The landing page will consist of a large hero image with a text introduction of the site's offering or purpose.
+
+Login, registration, add/edit products/profile and contact pages will all consist of forms with varying inputs dependant on the purpose of the form.
+
+The profile page will display user information derived from the form, past orders and favourite products/class passes with options to edit or delete all information or favourites.
+
+The products page will display all products/class passes and be searchable.
+
+The product detail page will display the image and details with an option to purchase or update/delete for the admin user.
