@@ -97,8 +97,21 @@ A registered users goals are in addition to the above mentioned user goals.
 |  have a contact form on the app | manage enquiries via email only |
 |  upload, edit and delete products through the frontend | manage stock and product/service offering over time |
 
+## Design
 
+### Scope and Structure
 
+**Scope**
 
+* Responsive Design 
+* Informative Landing Page
+* Sticky top Nav Bar & Mobile Nav Bar 
+* Relational database to store all uploaded data/content
+* CRUD functionality for profiles and products
+* Authentication functionality
+* Profile page
+* Search functionality
+* Contact functionality
+* E-Commerce functionality
 
 
