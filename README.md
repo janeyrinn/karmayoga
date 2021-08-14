@@ -170,3 +170,13 @@ The Open Sans font, created by *Steve Matteson* for [Google Fonts](https://fonts
 ![Allura Font](read-me/font-sample-one.png)
 
 ![Open Sans Font](read-me/font-sample-two.png)
+
+### Imagery
+
+Black and white imagery is used for hero and background images to keep inline with the theme of the app, images are from open sourced platforms.
+
+The logo and class passes were created using [canva.com](https://www.canva.com/).
+
+Product images are from [alibaba.com](https://www.alibaba.com/).
+
+For a detailed list of image sources please see the [credits](#credits) section.
