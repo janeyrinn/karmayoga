@@ -152,3 +152,21 @@ TBC
 Sensitive data such as SECRET_KEYS were stored on heroku using config variables to prevent unwanted connections to the database.
 
 Django allauth was used to set up user authentication and built in decorators allowed restricted access to certain features on the website.
+
+### Color Scheme
+
+![Color Swatch](read-me/color-swatch.png)
+
+The above color swatch shows a guideline for the color scheme of the site.
+
+Colors are brand colours that have been adopted for their strong visual contrast in an attempt to make all content as easily consumable and suitable for visually impared users as possible.
+
+### Typography
+
+The Allura font, created by *TypeSETit* for [Google Fonts](https://fonts.google.com/specimen/Allura?preview.text=CROSSFIT&preview.text_type=custom&query=allu#about) will be the main font for all headings in style 400 regular. 
+
+The Open Sans font, created by *Steve Matteson* for [Google Fonts](https://fonts.google.com/specimen/Open+Sans?preview.text=CROSSFIT&preview.text_type=custom&query=open+sans#about) will be the main font for all other content in style 400 regular or 300 light. 
+
+![Allura Font](read-me/font-sample-one.png)
+
+![Open Sans Font](read-me/font-sample-two.png)
