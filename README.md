@@ -302,4 +302,28 @@ Future features will include:
 - [Favicon Generator](https://www.favicon-generator.org/) to create the favicon
 - [Database Diagram](https://dbdiagram.io/) to create the database schema diagram
 - [Heroku](https://dashboard.heroku.com/) cloud based hosting.
-- [AWS](https://aws.amazon.com/) cloud based storage. 
+- [AWS](https://aws.amazon.com/) cloud based storage.
+
+### Sources
+
+_General sources of information for structure functionality and styling._
+
+- Code Institute, Full Stack Development course material.
+
+## Testing
+
+### Code Validity
+
+### Testing Premise
+
+### User Stories
+
+### Features
+
+### Functionality
+
+### Bugs & Fixes
+
+## Final Comments
+
+## Deployment
