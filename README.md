@@ -163,23 +163,23 @@ Colors are brand colours that have been adopted for their strong visual contrast
 
 ### Typography
 
-The Courgette font, created by *Karolina Lach* for [Google Fonts](https://fonts.google.com/specimen/Courgette?preview.text=CROSSFIT&preview.text_type=custom&query=cour#about) will be the main font for all headings in style 400 regular. 
+The Six Caps font, created by *Vernon Adams* for [Google Fonts](https://fonts.google.com/specimen/Six+Caps?query=six+caps#about) will be the main font for all headings in style 400 regular. 
 
-The Libre Baskerville font, created by *Impallari Type* for [Google Fonts](https://fonts.google.com/specimen/Libre+Baskerville?preview.text=CROSSFIT&preview.text_type=custom&query=libre#about) will be the main font for all other content in style 400 regular. 
+The Josefin Slab font, created by *Santiago Orozco* for [Google Fonts](https://fonts.google.com/specimen/Josefin+Slab?query=josefin&preview.text=Josefin%20Slab&preview.text_type=custom#about) will be the main font for all other content in style 300 light. 
 
-![Courgette Font](read-me/font-sample-one.png)
+![Six Caps Font](read-me/font-sample-one.png)
 
-![Libre Baskerville Font](read-me/font-sample-two.png)
+![Josefin Slab Font](read-me/font-sample-two.png)
 
 ### Imagery
 
-Black and white imagery is used for hero and background images to keep inline with the theme of the app, images are from open sourced platforms.
+The hero image was used as a basis for the color theme.
 
 The logo and class passes were created using [canva.com](https://www.canva.com/).
 
 Product images are from [alibaba.com](https://www.alibaba.com/).
 
-For a detailed list of image sources please see the [credits](#credits) section.
+For a detailed list of photographic image sources please see the [credits](#credits) section.
 
 
 ## Features
@@ -383,7 +383,7 @@ The 'repo' should then open and you can begin working on it by selecting the gre
 ## Credits
 
 ### Images
-1. Hero Image by [@conscious_design](https://unsplash.com/@conscious_design)
+1. Hero Image by [Kike Vega](https://unsplash.com/@kikekiks)
 
 ### Code
 
