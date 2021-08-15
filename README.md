@@ -266,6 +266,7 @@ For a detailed list of image sources please see the [credits](#credits) section.
         - Drop down for book a class, gen enquiry or my orders
         - Text box
 
+16. All users interactions will either be confirmed or notified of an error eith via on screen messages, orders and profile set up will be also confirmed via email.
 ### Future Features
 
 Future features will include:
