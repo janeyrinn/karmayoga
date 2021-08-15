@@ -274,3 +274,32 @@ Future features will include:
 >   * An online booking system
 >   * A chat forum for members of workshops or training courses at the studio
 
+## Technologies
+
+ ### Languages
+
+ - [HTML5](https://www.w3schools.com/html/html_intro.asp) main structure of pages and templates
+ - [CSS3](https://www.w3schools.com/css/css_intro.asp) for custom styling
+ - [JavaScript](https://www.w3schools.com/js/js_intro.asp) for interactive elements
+ - [Python](https://www.w3schools.com/python/python_intro.asp) for backend, a full list of the modules used can be found in the requirements.txt file
+  ### Frameworks and Libraries
+
+- [DJango](https://www.djangoproject.com/) functionality of the backend.
+- [Bootstrap](https://getbootstrap.com/) Styling and components
+- [Font Awesome](https://fontawesome.com/v4.7.0/) Used for icons
+- [Google Fonts](https://fonts.google.com/) Used to import fonts.
+
+### Programmes and Tools
+
+- [Balsamiq](https://balsamiq.com/) Used to create wireframes/mock-up during the planning & design process
+- [Git Hub](https://github.com/about) Used to store, version control, and to share the project's code
+- [Git/GitPod](https://www.gitpod.io/#:~:text=Gitpod%20is%20a%20multi%2Dservice,their%20own%20dedicated%20K8s%20deployment.) Code, build, debug and run applications    entirely in the cloud.
+- [Canva](https://www.canva.com/) For the creation of the logo
+- [Adobe Color Wheel](https://color.adobe.com) Image gradient feature was used to extract colors used in the logo and build a colour scheme
+- [Am I Responsive](http://ami.responsivedesign.is/) Used to check responsivity of code and display the mock-up in the documentation
+- [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) Used to test and optimize the site
+- [Random Key Gen](https://randomkeygen.com/) to great random secret keys
+- [Favicon Generator](https://www.favicon-generator.org/) to create the favicon
+- [Database Diagram](https://dbdiagram.io/) to create the database schema diagram
+- [Heroku](https://dashboard.heroku.com/) cloud based hosting.
+- [AWS](https://aws.amazon.com/) cloud based storage. 
