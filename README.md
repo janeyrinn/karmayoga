@@ -327,3 +327,53 @@ _General sources of information for structure functionality and styling._
 ## Final Comments
 
 ## Deployment
+
+This application was created and controlled using GitHub and GitPod workspace. 
+
+A Code Institute template was used for the initial creation of this repository which can be found [here](https://github.com/Code-Institute-Org/gitpod-full-template).
+To use this template to create a similar project simply click 'Use Template' at the top of the repository. You will be directed to name your own
+repositry using this template. Once named, you can decide whether to make the 'repo' public or private, my version is public. Then select 'Create Repository'.
+The 'repo' should then open and you can begin working on it by selecting the green GitPod button on the top right of the repo. The GitPod button will open your workspace.
+
+### Deployment via Heroku
+
+1. Go to [Heroku.com](https://id.heroku.com/login) and login or create and account.
+2. Your dashboard should open and there will be a 'New' button on the top-right of the screen, select this.
+3. Select 'Create New App' from the buttons drop down menu
+4. Add your app name (it must be unique, lowercase with a dash used instead of spaces)
+5. Select the region closest to you and click create app
+6. You will then need to connect your GitHub Repository, in the deploy tab, under method, select "Connect to GitHub".
+7. Connect your GitHub account, ensure the correct profile name is displayed
+8. Then add your repository name, search and select the correct repository
+9. Click the resources tab.
+10. Under Add-ons seach for Heroku Postgres and then click on it when it appears.
+11. Select Plan name Hobby Dev - Free and then click Submit Order Form.
+12. To set the environment variables open the settings tab and select 'Reveal Config Vars'
+13. Add the following variable keys and the values you have chosen :
+    > AWS_ACCESS_KEY_ID
+    > AWS_SECRET_ACCESS_KEY
+    > DATABASE_URL
+    > EMAIL_HOST_PASS
+    > EMAIL_HOST_USER
+    > SECRET_KEY
+    > STRIPE_PRICE_ID
+    > STRIPE_PUBLIC_KEY
+    > STRIPE_SECRET_KEY
+    > STRIPE_WH_SECRET
+    > USE_AWS
+14. Hide Con Fig Vars and reopen the deploy tab
+15. Under automatic deployment enable automatic deployment
+16. In manual deploy section select the branch you wish to deploy from the drop down and click deploy branch
+17. This will take a few moments, once complete and option to view the live app will appear
+
+### Make a clone on GitPod
+
+1. Select the Repo you wish to clone in GitHub
+2. Click on the code dropdown button
+3. Copy the https link to your clipboard
+4. Open your gitpod workspace
+5. In the terminal type "git clone" and paste the copied link
+6. Hit enter to create the clone
+7. To install the required packages type pip install -r requirements.txt into the command line
+8. To view what the code will look like in a browser from here type "python3 app.py" into the console and hit enter or replace "app.py" with which ever you have named the app
+9. A pop-up will appear stating "A service is available on Port 8080" select Open Browser
