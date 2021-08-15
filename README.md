@@ -139,7 +139,7 @@ All forms will validate and change colour/display messages to notify the user of
 Successful actions and unsuccessful actions will be flagged with django messages to the user.
 
 ### Wireframes
-A mock-up of how the site will be laid out is available here via [Wire Frames](read-me/booknook.pdf).
+A mock-up of how the site will be laid out is available here via [Wire Frames](read-me/karma-yoga-wireframes.pdf).
 
 ### Database Structure
 
@@ -226,7 +226,7 @@ For a detailed list of image sources please see the [credits](#credits) section.
 
         - A sort by category bar
         - A section displaying existing products and class passes
-        - Each product will have an image, label and a link to review its details
+        - Each product will have an image, label, favourite icon and a link to review its details
         - To an admin user there will be a link to edit/delete
 
 10. The product detail page will have:
@@ -234,6 +234,7 @@ For a detailed list of image sources please see the [credits](#credits) section.
         - An image of the product
         - Descriptive text
         - Price
+        - Favourite icon
         - Quantity selector
         - Add to cart button
         - Go back button
