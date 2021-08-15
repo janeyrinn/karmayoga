@@ -21,9 +21,9 @@ The live site can be accessed [*here*](INSERT HERE).
         * [Color Scheme](#color-scheme)
         * [Typography](#typography)
         * [Imagery](#imagery)
-        * [Design Limitations](#design-limitations)
 3. [Features](#features)
     * [Existing Features](#existing-features)
+    * [Future Features](#future-features)
 4. [Technologies](#technologies)
     * [Languages](#languages)
     * [Frameworks and Libraries](#frameworks-and-libraries)
@@ -163,13 +163,13 @@ Colors are brand colours that have been adopted for their strong visual contrast
 
 ### Typography
 
-The Allura font, created by *TypeSETit* for [Google Fonts](https://fonts.google.com/specimen/Allura?preview.text=CROSSFIT&preview.text_type=custom&query=allu#about) will be the main font for all headings in style 400 regular. 
+The Courgette font, created by *Karolina Lach* for [Google Fonts](https://fonts.google.com/specimen/Courgette?preview.text=CROSSFIT&preview.text_type=custom&query=cour#about) will be the main font for all headings in style 400 regular. 
 
-The Open Sans font, created by *Steve Matteson* for [Google Fonts](https://fonts.google.com/specimen/Open+Sans?preview.text=CROSSFIT&preview.text_type=custom&query=open+sans#about) will be the main font for all other content in style 400 regular or 300 light. 
+The Libre Baskerville font, created by *Impallari Type* for [Google Fonts](https://fonts.google.com/specimen/Libre+Baskerville?preview.text=CROSSFIT&preview.text_type=custom&query=libre#about) will be the main font for all other content in style 400 regular. 
 
-![Allura Font](read-me/font-sample-one.png)
+![Courgette Font](read-me/font-sample-one.png)
 
-![Open Sans Font](read-me/font-sample-two.png)
+![Libre Baskerville Font](read-me/font-sample-two.png)
 
 ### Imagery
 
@@ -181,7 +181,92 @@ Product images are from [alibaba.com](https://www.alibaba.com/).
 
 For a detailed list of image sources please see the [credits](#credits) section.
 
-### Design Limitations
+
+## Features
+
+1. Responsive to different screen sizes.
+2. Supported by Chrome, Microsoft Edge, and Firefox browsers.
+3. Adapted for users with special accessibility requirements where possible.
+4. There will be 14 pages: Landing page, all products page, categorized product page, product detail page, shopping bag, checkout page, successfull check out page, profile page, login page, sign up page, delete/edit product page, contact form page, 404 error and 500 error page.
+
+        - Each page will have a navigation header
+        - Each page will have a footer
+        - Each page will have a favicon on the browser tab
+
+5. Each page will have a 'sticky' navbar
+
+        - White with black text or the reverse
+        - Text logo on the left, or removed on smaller screens
+        - a central search bar
+        - Menu options in the center or to the left on mobile
+        - The logo will route back to the home page
+        - Menu options will change to color on hover & envoke a pointer
+        - On mobile devices, the menu items will switch to a toggle button and slide down the page when button is clicked
+        - The mobile nav will not have 'on-hover' styling
+        - Anon users will see my account(signup/register), search bar, shopping cart total, all products, contact page, equipment and classes page 
+        - Registered users will see the above mentioned with an additional profile tab and log out option under the 'my account' nav item
+
+ 6. The home page will have:
+
+        - A hero image.
+        - Informative text
+
+7. The login/register page will have:
+
+        - A form requesting user information (name, username & password) and a submission button
+
+8. The profile page will have: 
+
+        - An area displaying the users information
+        - An area displaying orders the user has purchased
+        - There will be an option to edit/delete information
+        - A favourites section
+
+9. The all products page will have:
+
+        - A sort by category bar
+        - A section displaying existing products and class passes
+        - Each product will have an image, label and a link to review its details
+        - To an admin user there will be a link to edit/delete
+
+10. The product detail page will have:
+
+        - An image of the product
+        - Descriptive text
+        - Price
+        - Quantity selector
+        - Add to cart button
+        - Go back button
+        - Edit/Delete link for the admin user only
+        - Messages displaying successfull addition of products to the shopping bag
+
+11. The shopping bag page will have:
+
+        - Images and descriptions of products
+        - Option to edit quantity or remove products, with messages conveying these actions
+        - Grand total calculation
+        - Keep shopping button
+        - Continue to checkout button
+
+12. The check out page will have:
+
+        - A form requesting order details
+        - An order summary
+        - A stripe payment option
+        - A check box to save info to a profile
+        - A grand total
+        - Messages to convey successful or unsuccessful check out
+
+14. The categorized product page will have the same features as the 'all product page' but will be pre filtered to that specific category.
+
+15. The contact form page will have a form with fields for:
+
+        - Name
+        - Email
+        - Drop down for book a class, gen enquiry or my orders
+        - Text box
+
+### Future Features
 
 Future features will include:
 
