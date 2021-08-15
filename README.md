@@ -378,3 +378,12 @@ The 'repo' should then open and you can begin working on it by selecting the gre
 7. To install the required packages type pip install -r requirements.txt into the command line
 8. To view what the code will look like in a browser from here type "python3 manage.py runserver" into the console and hit enter or replace "manage.py" with which ever you have named the app
 9. A pop-up will appear stating "A service is available on Port 8080" select Open Browser
+
+## Credits
+
+### Images
+1. Hero Image by [@conscious_design](https://unsplash.com/@conscious_design)
+
+### Code
+
+## Acknowledgements
