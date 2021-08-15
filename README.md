@@ -63,9 +63,9 @@ A simulation of the website on desktop and mobile devices can be seen below.
 
 ### User Stories
 
-#### Anonoumous User
+#### Anonoumous Consumer
 
-| **As an anonoumous I would like to ** : |  **So that I can**  : |
+| **As an anonoumous consumer I would like to ** : |  **So that I can**  : |
 | ------------- |:-------------:|
 | easily understand the main purpose of the site | determine if it is what I need |
 | use an aesthetically pleasing site| enjoy my user experience |
@@ -76,13 +76,16 @@ A simulation of the website on desktop and mobile devices can be seen below.
 | purchase products/class passes online | save time & travel expense |
 | contact the studio on their site | enquire without opening a secondary platform |
 
-#### Registered User
+#### Registered Consumer
 
 A registered users goals are in addition to the above mentioned user goals.
 
-| **As a registered user I would like to ** : |  **So that I can**  : |
+| **As a registered consumer I would like to ** : |  **So that I can**  : |
 | ------------- |:-------------:|
 | save my information to a profile | use it again easily |
+| recieve an email confirmation of my registration | verify succesful registration |
+| easily login and logout | to keep my info secure |
+| reset a lost password | recover access to y account |
 | edit/delete my profile | manage my information |
 | view past orders | keep track of them |
 | be able to favourite items to my profile | access them easily for re-purchase or review |
