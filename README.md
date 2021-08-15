@@ -350,17 +350,18 @@ The 'repo' should then open and you can begin working on it by selecting the gre
 11. Select Plan name Hobby Dev - Free and then click Submit Order Form.
 12. To set the environment variables open the settings tab and select 'Reveal Config Vars'
 13. Add the following variable keys and the values you have chosen :
-    > AWS_ACCESS_KEY_ID
-    > AWS_SECRET_ACCESS_KEY
-    > DATABASE_URL
-    > EMAIL_HOST_PASS
-    > EMAIL_HOST_USER
-    > SECRET_KEY
-    > STRIPE_PRICE_ID
-    > STRIPE_PUBLIC_KEY
-    > STRIPE_SECRET_KEY
-    > STRIPE_WH_SECRET
-    > USE_AWS
+    - AWS_ACCESS_KEY_ID
+    - AWS_SECRET_ACCESS_KEY
+    - DATABASE_URL
+    - EMAIL_HOST_PASS
+    - EMAIL_HOST_USER
+    - SECRET_KEY
+    - STRIPE_PRICE_ID
+    - STRIPE_PUBLIC_KEY
+    - STRIPE_SECRET_KEY
+    - STRIPE_WH_SECRET
+    - USE_AWS
+    
 14. Hide Con Fig Vars and reopen the deploy tab
 15. Under automatic deployment enable automatic deployment
 16. In manual deploy section select the branch you wish to deploy from the drop down and click deploy branch
