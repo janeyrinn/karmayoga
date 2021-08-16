@@ -392,5 +392,6 @@ The 'repo' should then open and you can begin working on it by selecting the gre
 1. Hero Image by [Kike Vega](https://unsplash.com/@kikekiks)
 
 ### Code
+1. CSS rule from [GitHub Gist](https://gist.github.com/juliuscsurgo/4440047) to remove blue glow from input elements
 
 ## Acknowledgements
