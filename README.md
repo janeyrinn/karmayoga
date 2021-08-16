@@ -75,6 +75,7 @@ A simulation of the website on desktop and mobile devices can be seen below.
 | view/search products and class passes | find items quickly |
 | purchase products/class passes online | save time & travel expense |
 | contact the studio on their site | enquire without opening a secondary platform |
+| recieve feedback for my actions | to determine whether they were successfull |
 
 #### Registered Consumer
 
@@ -186,6 +187,8 @@ For a detailed list of photographic image sources please see the [credits](#cred
 
 
 ## Features
+
+### Existing Features
 
 1. Responsive to different screen sizes.
 2. Supported by Chrome, Microsoft Edge, and Firefox browsers.
