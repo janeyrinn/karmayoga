@@ -1,1 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&family=Six+Caps&display=swap');
+html {
+    height: 100%;
+}
+
+body {
+    background: url() no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 160px);
+    color: #262626;
+    font-family: 'Josefin Slab';
+}
+
+h1 {
+    font-family: 'six caps';
+    text-transform: uppercase;
+}
+
+.text-dark {
+    color:#262626 !important;
+}
+
+.text-blue {
+    color: #6c748c !important;
+}
+
+.text-peach {
+    color: #f2CEAE !important;
+}
+
+.text-light-pink {
+    color: #f2A999 !important;
+}
+
+.text-dark-pink {
+    color:#f29188 !important;
+}
+
+.border-dark {
+    border: 1px solid #262626 !important;
+}
+
+/*--------------------------------------------NAVIGATION MENU-------------*/
+
+.top-nav {
+    background-color: #6C748C;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:focus {
+    color:#262626;
+    background-color:#f29188;
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    color: white;
+}
+
+.logo-link {
+    width: fit-content;
+}
+
+.logo-text{
+    font-size: 52px;
+}
+
+/*---------------HOMEPAGE----------*/
+
+.timetable-button {
+    background: #F29188;
+    color: white;
+    min-width: 260px;
+}
+
+.timetable-button:hover {
+    background: white;
+    color: #F29188;
+    min-width: 260px;
+}
+
+/* -------------------------------- Media Queries */
+
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+  }
+  
+      .header-container {
+          padding-top: 160px;
+      }
+  }
