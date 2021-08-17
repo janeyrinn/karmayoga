@@ -128,7 +128,7 @@
             </div>            
         </div>
     </header>
-
+    <main>
     {% if messages %}
         <div class="message-container"></div>
     {% endif %}
@@ -141,6 +141,31 @@
     
     {% block postloadjs %} 
     {% endblock %}
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="row bg-blue">
+            <div class="col-sm-12 col-md-4">
+                <p class="text-center my-auto">
+                    Contact Us <a href=""><i class="text-white far fa-envelope"></i></a>
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-4 text-center">
+                <a href=""><img src="{% static 'images/lotus.png' %}" alt="logo"></a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <p class="text-center">
+                    Find us on the map <a href=""><i class="text-white fas fa-map-marker-alt"></i></a>
+                </p>
+            </div>
+        </div>
+        <div class="row bg-dark">
+            <div class="col-sm-12">
+                    <p class="text-center copyright">Copyright &copy; Jane Rinn <span id="copyright"></span></p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
