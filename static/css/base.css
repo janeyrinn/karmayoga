@@ -8,6 +8,7 @@ body {
     height: calc(100vh - 160px);
     color: #262626;
     font-family: 'Josefin Slab';
+    margin-top: 160px;
 }
 
 h1 {
@@ -67,8 +68,10 @@ input[type="text"], textarea {
     color: white;
 }
 
-.menu-font {
- font-size: medium;
+.main-nav-font {
+ font-size: 24px;
+ color: #262626;
+ text-transform: uppercase;
 }
 
 .dropdown-item:hover,
