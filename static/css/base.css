@@ -68,8 +68,12 @@ input[type="text"], textarea {
     color: white;
 }
 
+.main-header {
+    font-size:1.2rem;
+}
+
 .main-nav-font {
- font-size: 24px;
+ font-size: 1.2rem;
  color: #262626;
  text-transform: uppercase;
 }
@@ -110,6 +114,12 @@ input[type="text"], textarea {
 
 button.navbar-toggler {
     color: white !important;
+}
+
+/*---------------DELIVERY BANNER----------*/
+
+.del-banner {
+    font-size: 1rem;
 }
 
 /*---------------FOOTER----------*/
