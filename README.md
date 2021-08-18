@@ -167,11 +167,8 @@ Colors are brand colours that have been adopted for their strong visual contrast
 
 ### Typography
 
-The Six Caps font, created by *Vernon Adams* for [Google Fonts](https://fonts.google.com/specimen/Six+Caps?query=six+caps#about) will be the main font for all headings in style 400 regular. 
+The Josefin Slab font, created by *Santiago Orozco* for [Google Fonts](https://fonts.google.com/specimen/Josefin+Slab?query=josefin&preview.text=Josefin%20Slab&preview.text_type=custom#about) will be the main font for all content.  
 
-The Josefin Slab font, created by *Santiago Orozco* for [Google Fonts](https://fonts.google.com/specimen/Josefin+Slab?query=josefin&preview.text=Josefin%20Slab&preview.text_type=custom#about) will be the main font for all other content in style 300 light. 
-
-![Six Caps Font](read-me/font-sample-one.png)
 
 ![Josefin Slab Font](read-me/font-sample-two.png)
 
@@ -389,7 +386,7 @@ The 'repo' should then open and you can begin working on it by selecting the gre
 ## Credits
 
 ### Images
-1. Hero Image by [Kike Vega](https://unsplash.com/@kikekiks)
+1. Hero Image by [Concious Design](https://unsplash.com/@conscious_design)
 
 ### Code
 1. CSS rule from [GitHub Gist](https://gist.github.com/juliuscsurgo/4440047) to remove blue glow from input elements

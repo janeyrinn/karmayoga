@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background: url('/media/hero-img.jpg') no-repeat center center fixed;
+    background: url('/media/hero.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 160px);
     color: #262626;
@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-    font-family: 'six caps';
+    
     text-transform: uppercase;
 }
 
@@ -31,20 +31,16 @@ h1 {
     background-color: #262626;
 }
 
+.logo-text {
+    font-size: 1.5rem!important;
+}
+
 .text-dark {
     color:#262626 !important;
 }
 
 .text-blue {
     color: #6c748c !important;
-}
-
-.text-peach {
-    color: #f2CEAE !important;
-}
-
-.text-light-pink {
-    color: #f2A999 !important;
 }
 
 .text-dark-pink {
@@ -68,10 +64,6 @@ input[type="text"], textarea {
     border: solid 2px white !important;
 }
 
-.dropdown-item {
-    color: white;
-}
-
 .dropdown-menu {
     border-radius: 0 !important;
 }
@@ -82,15 +74,14 @@ input[type="text"], textarea {
 
 .main-nav-font {
  font-size: 1rem;
- color: #262626;
  text-transform: uppercase;
 }
 
-.dropdown-item:hover,
-.dropdown-item:active,
-.dropdown-item:focus {
-    color:#262626;
-    background-color:#f29188;
+a.dropdown-item:hover,
+a.dropdown-item:active,
+a.dropdown-item:focus {
+    color:white !important;
+    background-color: #6C748C !important;  
 }
 
 /* icon from Bulma */
@@ -166,7 +157,7 @@ footer img {
 
 
 .timetable-button {
-    background: #F29188;
+    background: #6c748c ;
     color: white;
     min-width: 260px;
 }

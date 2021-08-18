@@ -53,7 +53,7 @@
             <!--Nav Logo-->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link logo-link">
-                    <h1 class="text-dark logo-text"> <img class="nav-logo" src="{% static 'images/lotus.png' %}" alt="logo"> K a r m a<span class="text-light-pink"> Y o g a</span></h1>
+                    <h1 class="text-dark logo-text"> <img class="nav-logo" src="{% static 'images/lotus.png' %}" alt="logo"> K a r m a<span class="text-dark-pink"> Y o g a</span></h1>
                 </a>
             </div>
             <!--Search Bar-->
@@ -97,7 +97,7 @@
                                 <p class="text-white my-0">Account</p>
                             </div>
                         </a>
-                        <div class="dropdown-menu bg-blue border-0" aria-labelledby="user-options">
+                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
                                     <a href="" class="dropdown-item">Product Management</a>
@@ -107,13 +107,14 @@
                             {% else %}
                                 <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
                                 <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                <a href="" class="dropdown-item">Timetable</a>
                             {% endif %}
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="row bg-pink">
+        <div class="row bg-dark">
             <nav class="navbar py-0 px-0 navbar-expand-lg navbar-light w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" 
                 aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
