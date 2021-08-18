@@ -15,7 +15,6 @@ body {
 }
 
 h1 {
-    
     text-transform: uppercase;
 }
 
@@ -58,6 +57,35 @@ input[type="text"], textarea {
     border:1px solid white !important;
     }
 
+/*--------------------------------------------ICONS-----------------------*/
+
+.icon-footer:hover {
+    color: #f29188;
+}
+
+/* icon from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: .5rem;
+    width: .5rem;
+    color: white;
+}
+
+.icon:hover {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: .5rem;
+    width: .5rem;
+    color: #f29188;
+}
+
+.header-icon {
+    font-size: 1rem;
+}
+
 /*--------------------------------------------NAVIGATION MENU-------------*/
 
 .navbar-toggler {
@@ -81,26 +109,13 @@ a.dropdown-item:hover,
 a.dropdown-item:active,
 a.dropdown-item:focus {
     color:white !important;
-    background-color: #6C748C !important;  
-}
-
-/* icon from Bulma */
-.icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: .5rem;
-    width: .5rem;
-    color: white;
-}
-
-.header-icon {
-    font-size: 1rem;
+    background-color: #f29188 !important;  
 }
 
 .nav-logo {
     width: 3.5rem;
 }
+
 .logo-link {
     width: fit-content;
 }
@@ -118,16 +133,9 @@ a.dropdown-item:focus {
     height: .5rem;
     width: .5rem;
     color: white;
-   
 }
 
-/*---------------DELIVERY BANNER----------*/
-
-.del-banner {
-    font-size: 1rem;
-}
-
-/*---------------FOOTER----------*/
+/*-------------------------------------------------FOOTER----------*/
 
 footer {
     background-color: #6c748c ;
@@ -153,8 +161,20 @@ footer img {
     font-size: 1rem;
 }
 
-/*---------------HOMEPAGE----------*/
+/*-------------------------------------------------MEDIA QUERIES----------*/
 
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+
+  
+      .header-container {
+          padding-top: 160px;
+      }
+  }
+
+/*-------------------------------------------------HOMEPAGE----------*/
 
 .timetable-button {
     background: #6c748c ;
@@ -167,16 +187,3 @@ footer img {
     color: #F29188;
     min-width: 260px;
 }
-
-/* -------------------------------- Media Queries */
-
-@media (min-width: 1200px) {
-    .container {
-      max-width: 80%;
-    }
-
-  
-      .header-container {
-          padding-top: 160px;
-      }
-  }
