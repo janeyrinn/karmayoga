@@ -160,6 +160,10 @@ footer {
     text-decoration: none !important;
 }
 
+footer img {
+    width: 3rem;
+  }
+
  footer p {
     font-size: 1.2rem;
     margin: 0;
@@ -199,6 +203,7 @@ footer {
     body {
         height: calc(100vh - 110px);
     }
+
 }
 
 /*-------------------------------------------------HOMEPAGE----------*/
@@ -214,3 +219,4 @@ footer {
     color: #F29188;
     min-width: 260px;
 }
+
