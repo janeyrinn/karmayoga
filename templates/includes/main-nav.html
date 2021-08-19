@@ -5,9 +5,9 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">Class Passes</a>
-                <a href="" class="dropdown-item ">Equipment</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?category=Yoga,Meditation" class="dropdown-item">Class Passes</a>
+                <a href="{% url 'products' %}?category=Mats,Straps,Blocks" class="dropdown-item ">Equipment</a>
+                <a href="{% url 'products' %}?category=Other" class="dropdown-item ">Other</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -17,10 +17,9 @@
                 Class Passes
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="passes-link">
-                <a href="" class="dropdown-item">Yoga</a>
-                <a href="" class="dropdown-item">Meditation</a>
-                <a href="" class="dropdown-item">Womens Circle</a>
-                <a href="" class="dropdown-item">All Passes</a>
+                <a href="{% url 'products' %}?category=Yoga" class="dropdown-item">Yoga</a>
+                <a href="{% url 'products' %}?category=Meditation" class="dropdown-item">Meditation</a>
+                <a href="{% url 'products' %}?category=Yoga,Meditation" class="dropdown-item">All Passes</a>
             </div>
         </li>
 
@@ -29,11 +28,11 @@
                 Equipment
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="equipment-link">
-                <a href="" class="dropdown-item">Mats</a>
-                <a href="" class="dropdown-item">Blocks</a>
-                <a href="" class="dropdown-item">Straps</a>
-                <a href="" class="dropdown-item">Merchandise</a>
-                <a href="" class="dropdown-item">All Equipment</a>
+                <a href="{% url 'products' %}?category=Mats" class="dropdown-item">Mats</a>
+                <a href="{% url 'products' %}?category=Blocks" class="dropdown-item">Blocks</a>
+                <a href="{% url 'products' %}?category=Straps" class="dropdown-item">Straps</a>
+                <a href="{% url 'products' %}?category=Other" class="dropdown-item">Other</a>
+                <a href="{% url 'products' %}?category=Mats,Straps,Blocks,Other" class="dropdown-item">All Equipment</a>
             </div>
         </li>
         <li class="nav-item dropdown">
