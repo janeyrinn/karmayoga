@@ -57,6 +57,9 @@ input[type="text"], textarea {
     border:1px solid white !important;
     }
 
+.hover-pink:hover {
+    color: #f29188 !important;
+}
 /*--------------------------------------------ICONS-----------------------*/
 
 .icon-footer:hover {
@@ -146,6 +149,11 @@ footer {
     position: fixed;
 }
 
+.footer-link {
+    color: white;
+    text-decoration: none !important;
+}
+
  footer p {
     font-size: 1.2rem;
     margin: 0;
@@ -158,7 +166,7 @@ footer img {
   }
 
 .copyright {
-    font-size: 1rem;
+    font-size: .75rem;
 }
 
 /*-------------------------------------------------MEDIA QUERIES----------*/
