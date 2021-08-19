@@ -10,8 +10,8 @@ body {
     height: calc(100vh - 160px);
     color: #262626;
     font-family: 'Josefin Slab';
-    margin-top: 160px;
-    margin-bottom: 160px;
+
+    
 }
 
 h1 {
@@ -50,7 +50,7 @@ h1 {
     border: 1px solid #262626 !important;
 }
 
-/*Found on Git Hub Gist */
+/*Class from on Git Hub Gist */
 input[type="text"], textarea {
     outline: none;
     box-shadow:none !important;
@@ -59,6 +59,17 @@ input[type="text"], textarea {
 
 .hover-pink:hover {
     color: #f29188 !important;
+}
+
+/* Class from CI BA Project */
+.overlay {
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    position: fixed;
+    background-color: white;
+    z-index: -1;
 }
 /*--------------------------------------------ICONS-----------------------*/
 
