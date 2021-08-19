@@ -91,10 +91,6 @@ input[type="text"], textarea {
 
 /*--------------------------------------------NAVIGATION MENU-------------*/
 
-.navbar-toggler {
-    border: solid 2px white !important;
-}
-
 .dropdown-menu {
     border-radius: 0 !important;
 }
