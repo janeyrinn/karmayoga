@@ -9,13 +9,16 @@ body {
     background-size: cover;
     height: calc(100vh - 160px);
     color: #262626;
-    font-family: 'Josefin Slab';
-
-    
+    font-family: 'Josefin Slab';   
 }
 
 h1 {
     text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-style: italic;
 }
 
 .bg-blue {
@@ -28,10 +31,6 @@ h1 {
 
 .bg-dark {
     background-color: #262626;
-}
-
-.logo-text {
-    font-size: 1.5rem!important;
 }
 
 .text-dark {
@@ -131,7 +130,7 @@ a.dropdown-item:focus {
 }
 
 .logo-text{
-    font-size: 2rem;
+    font-size: 1.25rem;
 } 
 
 .navbar-toggler {
@@ -167,11 +166,6 @@ footer {
     padding: 5px 0 0px 0;
 }
 
-footer img {
-    padding: 5px 0 5px 0;
-    width: 3rem;
-  }
-
 .copyright {
     font-size: .75rem;
 }
@@ -182,12 +176,30 @@ footer img {
     .container {
       max-width: 80%;
     }
-
-  
       .header-container {
           padding-top: 160px;
       }
   }
+
+ @media (max-width: 991px) {
+    .header-container {
+        padding-top: 110px;
+    }
+
+    footer img {
+        display: none;
+      }
+
+    footer p {
+    font-size: .75rem;
+    margin: 0;
+    padding: 5px 0 0px 0;
+}
+
+    body {
+        height: calc(100vh - 110px);
+    }
+}
 
 /*-------------------------------------------------HOMEPAGE----------*/
 
