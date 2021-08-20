@@ -313,6 +313,7 @@ Future features will include:
 _General sources of information for structure functionality and styling._
 
 - Code Institute, Full Stack Development course material.
+- [CodexWorld](https://www.codexworld.com/) JS learning. 
 
 ## Testing
 
