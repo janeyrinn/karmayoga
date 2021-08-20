@@ -50,7 +50,8 @@ h2 {
 }
 
 /*Class from on Git Hub Gist */
-input[type="text"], textarea {
+input[type="text"], textarea,
+select {
     outline: none;
     box-shadow:none !important;
     border:1px solid white !important;
@@ -218,5 +219,18 @@ footer img {
     background: white;
     color: #F29188;
     min-width: 260px;
+}
+
+/*--------------------------------------------PRODUCTS-------------*/
+
+a.category-filter-btn > span.cat-btn {
+    background-color: #6c748c !important;
+    color: white !important;
+    border: none !important;
+}
+a.category-filter-btn > span.cat-btn:hover {
+    background-color: #F29188 !important;
+    color: white !important ;
+    border: none !important;
 }
 
