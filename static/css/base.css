@@ -102,13 +102,13 @@ select {
 
 /*--------------------------------------------BUTTONS-----------------------*/
 
-.timetable-button {
+.shop-btn {
     background: #6c748c ;
     color: white;
     min-width: 260px;
 }
 
-.timetable-button:hover {
+.shop-btn:hover {
     background: white;
     color: #F29188;
     min-width: 260px;
