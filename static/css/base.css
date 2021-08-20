@@ -100,6 +100,45 @@ select {
     font-size: 1rem;
 }
 
+/*--------------------------------------------BUTTONS-----------------------*/
+
+.timetable-button {
+    background: #6c748c ;
+    color: white;
+    min-width: 260px;
+}
+
+.timetable-button:hover {
+    background: white;
+    color: #F29188;
+    min-width: 260px;
+}
+
+a.category-filter-btn > span.cat-btn {
+    background-color: #6c748c !important;
+    color: white !important;
+    border: none !important;
+}
+a.category-filter-btn > span.cat-btn:hover {
+    background-color: #F29188 !important;
+    color: white !important ;
+    border: none !important;
+}
+
+.btt-btn {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    border-radius: 50%;
+    display: none;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
 /*--------------------------------------------NAVIGATION MENU-------------*/
 
 .dropdown-menu {
@@ -209,28 +248,9 @@ footer img {
 
 /*-------------------------------------------------HOMEPAGE----------*/
 
-.timetable-button {
-    background: #6c748c ;
-    color: white;
-    min-width: 260px;
-}
 
-.timetable-button:hover {
-    background: white;
-    color: #F29188;
-    min-width: 260px;
-}
 
 /*--------------------------------------------PRODUCTS-------------*/
 
-a.category-filter-btn > span.cat-btn {
-    background-color: #6c748c !important;
-    color: white !important;
-    border: none !important;
-}
-a.category-filter-btn > span.cat-btn:hover {
-    background-color: #F29188 !important;
-    color: white !important ;
-    border: none !important;
-}
+
 
