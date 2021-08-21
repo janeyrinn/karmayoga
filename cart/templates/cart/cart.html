@@ -13,12 +13,20 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container mb-2">
+<div id="delivery-banner" class="row text-center">
+    <div class="col-md-12 text-dark">
+        <h4 class="">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>                
+    </div>            
+</div>
+</div>
+<div class="container mb-2">
     <div class="row">
         <div class="col">
             <hr>
-            <h2 class="logo-font mb-4">Shopping Cart</h2>
+            <h2 class="text-dark mb-4">Shopping Cart</h2>
             <hr>
         </div>
+       
     </div>
 
     <div class="row">
