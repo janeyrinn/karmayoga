@@ -77,7 +77,7 @@
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <!--Shopping Cart-->
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% endif %} nav-link" href="">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% endif %} nav-link" href="{% url 'view_cart' %}">
                             <div class="text-center">
                                 <div class="icon"><i class="fas fa-shopping-cart fa-lg"></i></div>
                                 <p class="text-white  my-0">
