@@ -138,8 +138,8 @@ a.category-filter-btn > span.cat-btn:hover {
     height: 42px;
     width: 42px;
     position: fixed;
-    bottom: 100px;
-    right: 30px;
+    bottom: 80px;
+    left: 15px;
     border-radius: 50%;
     display: none;
 }
@@ -253,9 +253,12 @@ footer img {
         height: calc(100vh - 110px);
     }
 
-}
+    }
 
 /*--------------------------------------------PRODUCTS-------------*/
 
-/*--------------------------------------------SHOPPING KART-----------------------*/
+/*--------------------------------------------SHOPPING CART-----------------------*/
 
+.cart {
+    margin-bottom: 50px;
+}

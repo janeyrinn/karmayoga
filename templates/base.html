@@ -77,7 +77,7 @@
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <!--Shopping Cart-->
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% endif %} nav-link" href="{% url 'view_cart' %}">
+                        <a class="{% if grand_total %}font-weight-bold{% endif %} nav-link" href="{% url 'view_cart' %}">
                             <div class="text-center">
                                 <div class="icon"><i class="fas fa-shopping-cart fa-lg"></i></div>
                                 <p class="text-white  my-0">
@@ -143,6 +143,7 @@
     
     <!-- Footer -->
    <footer>
+       <div class="container-fluid">
         <div class="row bg-blue">
             <div class="col-sm-12 col-md-4">
                 <p class="text-center hover-pink my-auto">
@@ -158,11 +159,13 @@
                 </p>
             </div>
         </div>
-        <div class="row bg-dark">
-            <div class="col-sm-12">
-                    <p class="text-center copyright">Copyright &copy; Jane Rinn <span id="copyright"></span></p>
-            </div>
+    
+    <div class="row bg-dark">
+        <div class="col-sm-12">
+                <p class="text-center copyright">Copyright &copy; Jane Rinn <span id="copyright"></span></p>
         </div>
+    </div>
+</div>
     </footer>
 </body>
 
