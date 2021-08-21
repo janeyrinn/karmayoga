@@ -144,7 +144,9 @@ a.category-filter-btn > span.cat-btn:hover {
     display: none;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
