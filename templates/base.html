@@ -139,8 +139,6 @@
     {% block content %} 
     {%endblock %} 
     
-    {% block postloadjs %} 
-    {% endblock %}
     </main>
     
     <!-- Footer -->
@@ -172,3 +170,9 @@
 </body>
 
 </html>
+{% block postloadjs %}
+    {{ block.super }}
+    <script>
+    $("#copyright").text(new Date().getFullYear());
+    </script>
+{% endblock %}
