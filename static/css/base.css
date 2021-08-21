@@ -264,3 +264,8 @@ footer img {
 .cart {
     margin-bottom: 50px;
 }
+
+.remove-item,
+.update-link {
+    font-size: .9rem;
+}
