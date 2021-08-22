@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 
-def about(request):
-    """ A view to return the timetable page """
+def view_timetable(request):
+    """ A view to return the timetable template """
 
-    return render(request, 'templates/timetable.html')
+    return render(request, 'timetable/timetable.html')

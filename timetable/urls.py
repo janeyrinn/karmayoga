@@ -1,7 +1,6 @@
 from django.urls import path
 from . import views
 
-
 urlpatterns = [
-    path('', views.timetable, name='timetable'),
+    path('', views.view_timetable, name='timetable'),
 ]
