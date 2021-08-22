@@ -49,11 +49,12 @@ h2 {
     border: 1px solid #262626 !important;
 }
 
-/*Class from on Git Hub Gist */
+/*Class from on Git Hub Gist and customized to suit */
 input[type="text"], textarea,
-select {
+select,
+input[type="email"] {
     outline: none;
-    box-shadow:none !important;
+    box-shadow: none !important;
     border:1px solid white !important;
     }
 
@@ -152,8 +153,10 @@ a.category-filter-btn > span.cat-btn:hover {
 
 /*--------------------------------------------NAVIGATION MENU-------------*/
 
-.dropdown-menu {
+.dropdown-menu, a.dropdown-item {
     border-radius: 0 !important;
+    background-color: #6c748c;
+    color: white !important;
 }
 
 .main-header {
@@ -169,7 +172,7 @@ a.dropdown-item:hover,
 a.dropdown-item:active,
 a.dropdown-item:focus {
     color:white !important;
-    background-color: #f29188 !important;  
+    background-color: #262626 !important;  
 }
 
 .nav-logo {
