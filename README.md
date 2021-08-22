@@ -303,7 +303,7 @@ Future features will include:
 - [Am I Responsive](http://ami.responsivedesign.is/) Used to check responsivity of code and display the mock-up in the documentation
 - [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) Used to test and optimize the site
 - [Random Key Gen](https://randomkeygen.com/) to great random secret keys
-- [Favicon Generator](https://www.favicon-generator.org/) to create the favicon
+- [Red Ketchup](https://redketchup.io/favicon-generator) to create the favicon
 - [Database Diagram](https://dbdiagram.io/) to create the database schema diagram
 - [Heroku](https://dashboard.heroku.com/) cloud based hosting.
 - [AWS](https://aws.amazon.com/) cloud based storage.
