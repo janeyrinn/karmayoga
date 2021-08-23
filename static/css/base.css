@@ -52,7 +52,8 @@ h2 {
 /*Class from on Git Hub Gist and customized to suit */
 input[type="text"], textarea,
 select,
-input[type="email"] {
+input[type="email"],
+.btn {
     outline: none;
     box-shadow: none !important;
     border:1px solid white !important;
@@ -72,6 +73,7 @@ input[type="email"] {
     background-color: white;
     z-index: -1;
 }
+
 /*--------------------------------------------ICONS-----------------------*/
 
 .icon-footer:hover {
@@ -112,6 +114,7 @@ input[type="email"] {
     background: #F29188;
     color: white;
 }
+
 .shop-btn {
     background: #6c748c ;
     color: white;
@@ -149,6 +152,11 @@ a.category-filter-btn > span.cat-btn:hover {
 .update-link,
 .remove-item {
     cursor: pointer;
+}
+
+.input-group-append .btn, .input-group-prepend .btn {
+    position: relative;
+    z-index: 0;
 }
 
 /*--------------------------------------------NAVIGATION MENU-------------*/
