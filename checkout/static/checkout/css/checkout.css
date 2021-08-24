@@ -12,19 +12,29 @@
     margin-bottom: 100px;
 }
 
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #f29188 !important;
+}
 
 /* CSS taken from CI Boutique Ado and customized*/
 .StripeElement,
-.stripe-style-input {
-  box-sizing: border-box;
-  height: 40px;
-  padding: 10px 12px;
-  border: 1px solid transparent;
-  border-radius: 0px;
-  background-color: white;
-  box-shadow: 0 1px 3px 0 #6c748c;
-  -webkit-transition: box-shadow 150ms ease;
-  transition: box-shadow 150ms ease;
+.stripe-style-input,
+input[type="text"], textarea, select, input[type="email"] {
+  box-sizing: border-box !important;
+  height: 40px !important;
+  padding: 10px 12px !important;
+  border: 1px solid transparent !important;
+  border-radius: 0px !important;
+  background-color: white !important;
+  box-shadow: 0 1px 3px 0 #6c748c !important;
+  -webkit-transition: box-shadow 150ms ease !important;
+  transition: box-shadow 150ms ease !important;
 }
 
 .StripeElement--focus,
@@ -60,3 +70,4 @@
   height: 100%;
   color: white;
 }
+
