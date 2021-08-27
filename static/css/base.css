@@ -178,8 +178,8 @@ a.category-filter-btn > span.cat-btn:hover {
 a.dropdown-item:hover,
 a.dropdown-item:active,
 a.dropdown-item:focus {
-    color:white !important;
-    background-color: #262626 !important;  
+    color: #262626 !important;
+    background-color: white !important;  
 }
 
 .nav-logo {
