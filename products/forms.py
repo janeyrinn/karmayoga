@@ -15,4 +15,4 @@ class ProductForm(forms.ModelForm):
 
         self.fields['category'].choices = friendly_names
         for field_name, field in self.fields.items():
-            field.widget.attrs['class'] = 'shadow p-3 mb-5 bg-white rounded-0'
+            field.widget.attrs['class'] = 'rounded-0'
