@@ -361,6 +361,13 @@ footer img {
         .navbar {
             padding: 0;
         }
+
+        .allauth-form-inner-content p {
+            margin-top: .5rem !important; 
+            margin-bottom: .5rem !important; 
+            color: #262626; 
+        }
+
     }
 /*--------------------------------------------TOASTS/MESSAGES---------------------*/
 
