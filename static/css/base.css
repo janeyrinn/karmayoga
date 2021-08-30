@@ -194,17 +194,6 @@ a.dropdown-item:focus {
     font-size: 1.25rem;
 } 
 
-.navbar-toggler {
-    color: white !important;
-    border:  none !important;
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: .5rem;
-    width: .5rem;
-    color: white;
-}
-
 /*-------------------------------------------------FOOTER----------*/
 
 footer {
@@ -237,23 +226,25 @@ footer img {
 
 /*-------------------------------------------------MEDIA QUERIES----------*/
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
     .container {
       max-width: 80%;
     }
       .header-container {
           padding-top: 160px;
       }
+      
+    .display-4.text-white {
+        font-size: 4rem;
+        margin-top: 200px;
+        margin-right: 125px;
+    }
   }
 
  @media (max-width: 991px) {
     .header-container {
         padding-top: 110px;
     }
-
-    footer img {
-        display: none;
-      }
 
     footer p {
     font-size: .75rem;
@@ -265,8 +256,73 @@ footer img {
         height: calc(100vh - 110px);
     }
 
+    .display-4.text-white {
+        font-size: 2rem;
+        margin-top: 50px;
+        margin-right: 25px;
     }
 
+    .nav-link {
+        padding: 0.15rem;
+
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    }
+
+    @media (max-width: 380px) {
+
+        .display-4.text-white {
+            font-size: 1.5rem;
+            margin-top: 50px;
+            margin-right: 25px;
+        }
+    
+        .intro-text{
+            font-size: 1rem;
+        }
+
+        .nav-link {
+            padding: 0.1rem;
+    
+        }
+
+        a.dropdown-item {
+            font-size: .75rem;
+        }
+    
+        .nav-link i.fa-lg,
+        .list-inline-item {
+            font-size: .75rem;
+        }
+    
+        .navbar-toggler {
+            padding: .5rem .5rem;
+            font-size: .75rem;
+        }
+
+        .shop-btn {
+            background: #6c748c ;
+            color: white;
+            min-width: 160px;
+            font-size: 1rem;
+        }
+        
+        .shop-btn:hover {
+            background: white;
+            color: #F29188;
+            min-width: 160px;
+            font-size: 1rem;
+        }
+    }
 /*--------------------------------------------TOASTS/MESSAGES---------------------*/
 
 .message-container {
