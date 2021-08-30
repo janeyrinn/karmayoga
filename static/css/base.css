@@ -261,7 +261,7 @@ footer img {
 /* Media Query to handle responsivity on medium mobile screens */
  @media (max-width: 991px) {
     .header-container {
-        padding-top: 110px;
+        padding-top: 90px;
     }
 
     .dropdown-menu {
