@@ -161,6 +161,38 @@
         {% block content %}
         {% endblock %}
 
+        <!--Start Footer -->
+    <footer>
+            <div class="footer-container container-fluid">
+                <div class="row bg-blue">
+                    <div class="col-sm-12 col-md-4">
+                        <p class="text-center hover-pink my-auto">
+                            <a class="hover-pink footer-link" href="">Contact Us <a href=""><i
+                                        class="text-white hover-pink far fa-envelope" aria-hidden="true"></i></a>
+                        </p>
+                        <span class="sr-only">Contact Us</span>
+                    </div>
+                    <div class="col-sm-12 col-md-4 text-center">
+                        <a href=""><img src="{% static 'images/lotus.png' %}" alt="logo" aria-hidden="true"></a>
+                        <span class="sr-only">Lotus Logo</span>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <p class="text-center  my-auto ">
+                            <a class="footer-link hover-pink" href="">Social <i
+                                    class="text-white hover-pink fab fa-instagram" aria-hidden="true"></i></a>
+                        </p>
+                        <span class="sr-only">Instagram</span>
+                    </div>
+                </div>
+                <div class="row bg-dark">
+                    <div class="col-sm-12">
+                        <p class="text-center copyright">Copyright &copy; Jane Rinn <span id="copyright"></span></p>
+                        <span class="sr-only">Copyright</span>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
         {% block postloadjs %}
         <script type="text/javascript">
             // JS for Toasts/Messages
@@ -176,35 +208,6 @@
         </script>
         {% endblock %}
     </main>
-
-    <!--Start Footer -->
-    <footer>
-        <div class="container-fluid">
-            <div class="row bg-blue">
-                <div class="col-sm-12 col-md-4">
-                    <p class="text-center hover-pink my-auto">
-                        <a class="hover-pink footer-link" href="">Contact Us <a href=""><i
-                                    class="text-white hover-pink far fa-envelope"></i></a>
-                    </p>
-                </div>
-                <div class="col-sm-12 col-md-4 text-center">
-                    <a href=""><img src="{% static 'images/lotus.png' %}" alt="logo"></a>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <p class="text-center  my-auto ">
-                        <a class="footer-link hover-pink" href="">Find us on the map <i
-                                class="text-white hover-pink fas fa-map-marker-alt"></i></a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="row bg-dark">
-                <div class="col-sm-12">
-                    <p class="text-center copyright">Copyright &copy; Jane Rinn <span id="copyright"></span></p>
-                </div>
-            </div>
-        </div>
-    </footer>
 </body>
 
 </html>
