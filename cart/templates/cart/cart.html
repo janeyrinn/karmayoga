@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'cart/css/cart.css' %}">
+{% endblock %}
+
 {% load bag_tools %}
 
 {% block page_header %}
@@ -50,9 +54,9 @@
                     <tr>
                         <td class="p-3 w-25">
                             {% if item.product.image %}
-                            <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                            <img class="h-50 w-50 img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                             {% else %}
-                            <img class="img-fluid rounded" src="{{ MEDIA_URL }}no-image.png" alt="{{ item.product.name }}">
+                            <img class="h-50 w-50 img-fluid rounded" src="{{ MEDIA_URL }}no-image.png" alt="{{ item.product.name }}">
                             {% endif %}
                         </td>
                         <td class="py-3">
@@ -98,10 +102,10 @@
                     </tr>
                 {% endfor %}
                 <tr>
-                    <td colspan="5" class="pt-5 text-right">
+                    <td colspan="5" class="pt-2 text-right">
                         <h6 class="font-weight-bold">Bag Total: €{{ total|floatformat:2 }}</h6>
                         <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
-                        <h4 class="mt-4 font-weight-bold">Grand Total: €{{ grand_total|floatformat:2 }}</h4>
+                        <h4 class="mt-2 font-weight-bold">Grand Total: €{{ grand_total|floatformat:2 }}</h4>
                     </td>
                 </tr>
                 <tr>

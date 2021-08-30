@@ -422,14 +422,4 @@ footer img {
     border-color: #6c748c;
     border-radius: 0;
 }
-/*--------------------------------------------SHOPPING CART-----------------------*/
-
-.cart {
-    margin-bottom: 50px;
-}
-
-.remove-item,
-.update-link {
-    font-size: .9rem;
-}
 
