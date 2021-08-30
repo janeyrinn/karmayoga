@@ -1,10 +1,6 @@
 /*--------------------------------------------SHOPPING CART-----------------------*/
 
-.cart {
-    margin-bottom: 50px;
+.table-container {
+    padding-bottom: 120px;
 }
 
-.remove-item,
-.update-link {
-    font-size: .9rem;
-}
