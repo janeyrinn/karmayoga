@@ -27,7 +27,7 @@
             <hr>
         </div>
     </div>
-    <!--Start of Contents in Cart-->
+    <!--Start of Cart Contents Cards -->
     <div class="row">
         {% if cart_items %}
         {% for item in cart_items %}
@@ -41,6 +41,8 @@
                 <div class="card-body pb-0">
                     <p class="mb-0 font-weight-bold lead text-dark">{{ item.product.name }}</p>
                     <p class="my-0">€{{ item.product.price }}</p>
+
+                    <!--Start increment/decrement feature -->
                     <form class="form update-form" method="POST" action="{% url 'edit_cart' item.item_id %}">
                         {% csrf_token %}
                         <div class="form-group">
@@ -67,6 +69,7 @@
                             </div>
                         </div>
                     </form>
+                    <!--Start Update/Remove Links & Subtotal -->
                     <a class="update-link text-blue"><small> Update</small></a>
                     <a class="remove-item text-dark-pink float-right"
                         id="remove_{{ item.item_id }}"><small>Remove</small></a>
@@ -75,6 +78,7 @@
                 </div>
             </div>
         </div>
+        <!--Start <hr> styling for different screen sizes -->
         {% if forloop.counter|divisibleby:1 %}
         <div class="col-12 d-sm-none mb-3">
             <hr>
@@ -97,6 +101,7 @@
         {% endif %}
         {% endfor %}
     </div>
+    <!--Start Grand Total-->
     <div class="row text-right mb-2">
         <div class="col-12 text-right mb-5">
             <h6 class="font-weight-bold">Cart Total: €{{ total|floatformat:2 }}</h6>
@@ -107,6 +112,8 @@
                 You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong> more!
             </p>
             {% endif %}
+
+            <!--Navigation Buttons-->
             <div class="cart-btn">
                 <a href="{% url 'products' %}" class="btn btn-gen rounded-0 mb-2">
                     <span class="icon">
@@ -149,7 +156,6 @@
 {% include 'products/includes/quantity_input_script.html' %}
 
 <!--CodexWorld Snippet-->
-
 <script type="text/javascript">
     // back to top button
     $(window).scroll(function () {
@@ -187,5 +193,4 @@
             });
     })
 </script>
-
 {% endblock %}
