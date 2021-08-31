@@ -250,6 +250,10 @@ footer img {
       .header-container {
           padding-top: 160px;
       }
+
+      .cart-btn {
+        margin-bottom: 4rem;
+    }
       
     .display-4.text-white {
         font-size: 4rem;
@@ -303,6 +307,10 @@ footer img {
         font-size: 1rem;
     }
 
+    .cart-btn {
+        margin-bottom: 3.5rem;
+    }
+
     .btn.btn-gen.rounded-0 {
         padding: .375rem .375rem;
     }
@@ -349,6 +357,10 @@ footer img {
             color: white;
             min-width: 160px;
             font-size: 1rem;
+        }
+
+        .cart-btn {
+            margin-bottom: 3.5rem;
         }
         
         .shop-btn:hover {
