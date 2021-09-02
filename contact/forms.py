@@ -25,5 +25,5 @@ class ContactForm(forms.ModelForm):
         for field in self.fields:
             placeholder = f'{placeholders[field]} *'
             self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'stripe-style-input'
+            self.fields[field].widget.attrs['class'] = 'form-box-style'
             self.fields[field].label = False
