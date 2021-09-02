@@ -9,12 +9,12 @@
     </div>
     <div class="toast-body bg-white">
         <div class="row">
-            <div class="col">
+            <div class="col lead">
                 {{ message }}
                 <hr class="mt-1 mb-3">
             </div>
         </div>
-        {% if grand_total and not on_profile_page %}
+        {% if grand_total and not on_profile_page and not on_contact_page %}
             <p class="bg-white text-dark py-1">Your Cart ({{ product_count }})</p>
             <div class="cart-notification-wrapper">
                 {% for item in cart_items %}
