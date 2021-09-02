@@ -6,38 +6,50 @@
 {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="mb-4">Send Us a Message</h2>
-                <hr>
-            </div>
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="mb-4">Send Us a Message</h2>
+            <hr>
         </div>
-        <!--Start Contact Form-->
-        <div class="row">
-            <div class="col-12 col-lg-6 offset-lg-3 col-md-10 offset-md-1">
-                <form method="POST" action="">
-                    {% csrf_token %}
-                    {{ form|crispy }}
+    </div>
+    <!--Start Contact Form-->
+    <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 col-md-10 offset-md-1">
+            <form method="POST" action="{% url 'contact' %}">
+                {% csrf_token %}
+                {% for field in form %}
+                {{ field|as_crispy_field }}
+                {% endfor %}
+                <div class="float-right">
                     <button type="Submit" class="btn btn-gen rounded-0 my-2">Send</button>
                     <a href="{% url 'products' %}" class="btn btn-gen rounded-0 my-2">Cancel</a>
-                </form>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--Space Container-->
+    <div class="row mb-2">
+        <div class="col-12 mb-5">
+            <div class="spacer">
             </div>
         </div>
     </div>
+</div>
 
 {% endblock %}
 
 
 {% block postloadjs %}
+{{ block.super }}
 {% endblock %}
