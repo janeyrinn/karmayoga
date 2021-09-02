@@ -28,16 +28,22 @@
         </div>
     </div>
     <!--Start of Cart Contents Cards -->
+    <div class="container">
     <div class="row">
         {% if cart_items %}
         {% for item in cart_items %}
-        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-            <div class="card h-60 border-0 shadow p-3 mb-4 bg-white rounded">
+        <div class="col-12">
+
+            <div class="card border-0 shadow p-3 mb-4 bg-white rounded">
+                <div class="row">
+                    <div class="col-md-4">
                 {% if item.product.image %}
-                <img class="img-fluid h-30 rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                 {% else %}
-                <img class="img-fluid h-30 rounded" src="{{ MEDIA_URL }}no-image.png" alt="{{ item.product.name }}">
+                <img class="img-fluid rounded" src="{{ MEDIA_URL }}no-image.png" alt="{{ item.product.name }}">
                 {% endif %}
+                    </div>
+                    <div class="col-md-8">
                 <div class="card-body pb-0">
                     <p class="mb-0 font-weight-bold lead text-dark">{{ item.product.name }}</p>
                     <p class="my-0">€{{ item.product.price }}</p>
@@ -55,7 +61,7 @@
                                         </span>
                                     </button>
                                 </div>
-                                <input class="w-50 form-control form-control-sm qty_input" type="number" name="quantity"
+                                <input class="form-control form-control-sm qty_input" type="number" name="quantity"
                                     value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}"
                                     id="id_qty_{{ item.item_id }}">
                                 <div class="input-group-append">
@@ -75,9 +81,12 @@
                         id="remove_{{ item.item_id }}"><small>Remove</small></a>
                     <p class="my-0">Subtotal <span
                             class="float-right">€{{ item.product.price | calc_subtotal:item.quantity  }}</span></p>
+                    </div>
                 </div>
             </div>
+            </div>
         </div>
+    
         <!--Start <hr> styling for different screen sizes -->
         {% if forloop.counter|divisibleby:1 %}
         <div class="col-12 d-sm-none mb-3">
@@ -101,6 +110,7 @@
         {% endif %}
         {% endfor %}
     </div>
+
     <!--Start Grand Total-->
     <div class="row text-right mb-2">
         <div class="col-12 text-right mb-5">
@@ -142,6 +152,7 @@
         </a>
     </div>
     {% endif %}
+</div>
 </div>
 <!--Back to Top Button-->
 <div class="btt-btn bg-pink shadow-sm left">
