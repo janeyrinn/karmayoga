@@ -17,7 +17,11 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
 }
 
 .bg-blue {
@@ -298,6 +302,10 @@ footer img {
 
     }
 
+    .spacer {
+        margin-bottom: 5rem;
+    }
+
     .nav-link i.fa-lg {
         font-size: 1rem;
     }
@@ -357,10 +365,6 @@ footer img {
             color: white;
             min-width: 160px;
             font-size: 1rem;
-        }
-
-        .cart-btn {
-            margin-bottom: 3.5rem;
         }
         
         .shop-btn:hover {

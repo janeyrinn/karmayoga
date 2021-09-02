@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% load bag_tools %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'cart/css/cart.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<!-- Start of Favourites -->
+<div class="overlay"></div>
+<div class="container mb-5">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="text-dark font">My Favourites</h2>
+            <hr>
+        </div>
+    </div>
+
+    <!--Start of Favourite Items-->
+    <div class="row justify-content-center">
+        {% if favourite_items %}
+        {% for item in favourite_items %}
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-2 ">
+            <div class="card h-60 border-0 shadow p-3 mb-4 bg-white rounded">
+                <small><i class="float-right far fa-heart mb-1 mr-1"></i></small>
+                <div class="row">
+                    {% if item.product.image %}
+                    <a href="">
+                        <img class="card-img-top img-fluid" src="{{ item.product.image.url }}"
+                            alt="{{ item.product.name }}">
+                    </a>
+                    {% else %}
+                    <a href="">
+                        <img class=" card-img-top img-fluid " src="{{ MEDIA_URL }}no-image.png"
+                            alt="{{ item.product.name }}">
+                    </a>
+                    {% endif %}
+
+
+                    <div class="card-body pb-0">
+                        <p class="mb-0 font-weight-bold lead text-dark">{{ item.product.name }}</p>
+                        <p class="my-0">€{{ item.product.price }}</p>
+                        <!--Start Add to Cart/Remove Links -->
+                        <a class="remove-item text-dark-pink" id="remove_{{ item.item_id }}"><small>Remove</small></a>
+                        <a class="text-blue float-right" id="remove_{{ item.item_id }}"><small>Add to Cart</small></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Start <hr> styling for different screen sizes -->
+        {% if forloop.counter|divisibleby:1 %}
+        <div class="col-12 d-sm-none mb-3">
+            <hr>
+        </div>
+        {% endif %}
+        {% if forloop.counter|divisibleby:2 %}
+        <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-3">
+            <hr>
+        </div>
+        {% endif %}
+        {% if forloop.counter|divisibleby:3 %}
+        <div class="col-12 d-none d-lg-block d-xl-none mb-3">
+            <hr>
+        </div>
+        {% endif %}
+        {% if forloop.counter|divisibleby:4 %}
+        <div class="col-12 d-none d-xl-block mb-3">
+            <hr>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+
+    <!--Space Container-->
+    <div class="row mb-2">
+        <div class="col-12 mb-5">
+            <div class="spacer">
+            </div>
+        </div>
+    </div>
+
+    {% else %}
+    <!--No Favourites -->
+    <div class="mt-3">
+        <h3 class="mb-4">No favourites yet <i class="fas fa-heart-broken fa-xlg text-dark-pink"></i></h3>
+        <a href="{% url 'products' %}" class="btn btn-gen bg-blue shadow ml-3 rounded-0 btn-lg">
+            <span>
+                <i class="fas fa-chevron-left"></i>
+            </span>
+            <span>Find favourites!</span>
+        </a>
+    </div>
+    </div>
+    {% endif %}
+</div>
+
+<!--Back to Top Button-->
+<div class="btt-btn bg-pink shadow-sm left">
+    <a class="btt-link d-flex h-100">
+        <i class="fas fa-arrow-alt-circle-up text-white mx-auto my-auto"></i>
+    </a>
+</div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+
+
+<!--CodexWorld Snippet-->
+<script type="text/javascript">
+    // back to top button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.btt-btn').fadeIn();
+        } else {
+            $('.btt-btn').fadeOut();
+        }
+    });
+    $('.btt-btn').click(function (e) {
+        window.scrollTo(0, 0)
+    })
+</script>
+{% endblock %}
