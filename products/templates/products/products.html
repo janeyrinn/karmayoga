@@ -54,7 +54,8 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-2">
                             <div class="card h-60 border-0 shadow p-3 mb-4 bg-white rounded">
                                 {% if product.image %}
-                                <small><i class=" float-right far fa-heart mb-1 mr-1"></i></small>
+                                <small><i class="add-favourite empty-favourite float-right far fa-heart mb-1 mr-1"></i></small>
+                                <small><i class="remove-favourite favourite display-off float-right fas fa-heart mb-1 mr-1"></i></small>
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
@@ -124,7 +125,6 @@
 
 {% block postloadjs %}
     {{ block.super }}
-
     <script type="text/javascript">
     // snippet learnt and adapted from codex world
          $(window).scroll(function(){
@@ -140,6 +140,7 @@
     </script>
     
     <script type="text/javascript">
+    // Controls filtering functionality - Accredited : Boutique Ado CI
         $('#sort-selector').change(function() {
             var selector = $(this);
             var currentUrl = new URL(window.location);
@@ -161,5 +162,23 @@
             }
         })
     </script>
+
+<script type="text/javascript">
+// change color of favourites button
+    $(document).ready(function() {
+       
+     $(".add-favourite").click(function () {
+      $('.add-favourite').addClass('display-off');
+      $('.remove-favourite').removeClass('display-off');
+        });
+        $(".remove-favourite").click(function () {
+      $('.remove-favourite').addClass('display-off');
+      $('.add-favourite').removeClass('display-off');
+        });
+      
+    });     
+</script>
+
+
 
 {% endblock %}

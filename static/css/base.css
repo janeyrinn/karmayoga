@@ -162,6 +162,21 @@ a.category-filter-btn > span.cat-btn:hover {
     z-index: 0;
 }
 
+/*------Classes to Control Favourites Btns-----*/
+
+.favourite {
+    color:#f29188;
+    cursor: pointer;
+}
+
+.empty-favourite {
+    cursor: pointer;
+}
+
+.display-off {
+    display: none !important;
+}
+
 /*--------------------------------------------NAVIGATION MENU-------------*/
 
 .dropdown-menu, a.dropdown-item {
