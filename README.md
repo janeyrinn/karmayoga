@@ -292,6 +292,7 @@ Future features will include:
 - [Bootstrap](https://getbootstrap.com/) Styling and components
 - [Font Awesome](https://fontawesome.com/v4.7.0/) Used for icons
 - [Google Fonts](https://fonts.google.com/) Used to import fonts.
+- [Hover CSS](https://ianlunn.co.uk/articles/hover-css-tutorial-introduction) hover class on shop button.
 
 ### Programmes and Tools
 

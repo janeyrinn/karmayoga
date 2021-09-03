@@ -119,15 +119,13 @@ input[type="email"],
 }
 
 .shop-btn {
-    background: #6c748c ;
+    border: solid 1px white;
     color: white;
     min-width: 260px;
 }
 
-.shop-btn:hover {
-    background: white;
-    color: #F29188;
-    min-width: 260px;
+.hvr-sweep-to-left::before  {
+    background-color: #F29188 !important;
 }
 
 a.category-filter-btn > span.cat-btn {
@@ -275,8 +273,8 @@ footer img {
     }
       
     .display-4.text-white {
-        font-size: 4rem;
-        margin-top: 200px;
+        font-size: 3.5rem;
+        margin-top: 10px;
         margin-right: 125px;
     }
   }
@@ -316,6 +314,11 @@ footer img {
         padding: 0.15rem;
 
     }
+
+    .intro-text{
+        font-size: 1rem;
+    }
+
 
     .spacer {
         margin-bottom: 5rem;
@@ -376,18 +379,12 @@ footer img {
         }
 
         .shop-btn {
-            background: #6c748c ;
             color: white;
+            border: solid 1px white;
             min-width: 160px;
             font-size: 1rem;
         }
-        
-        .shop-btn:hover {
-            background: white;
-            color: #F29188;
-            min-width: 160px;
-            font-size: 1rem;
-        }
+
         
         .navbar {
             padding: 0;
