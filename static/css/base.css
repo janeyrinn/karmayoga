@@ -5,11 +5,21 @@ html {
 }
 
 body {
-    background: url('/media/hero.jpg') no-repeat center center fixed;
-    background-size: cover;
     height: calc(100vh - 160px);
     color: #262626;
     font-family: 'Josefin Slab', sans-serif;   
+}
+
+.overlay-hero {
+    background: url('/media/hero.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    position: fixed;
+    background-color:#6C748C;
+    z-index: -1;
 }
 
 h1 {
@@ -66,16 +76,6 @@ input[type="email"],
     color: #f29188 !important;
 }
 
-/* Class from CI BA Project */
-.overlay {
-    height: 100%;
-    width: 100%;
-    top:0;
-    left: 0;
-    position: fixed;
-    background-color: white;
-    z-index: -1;
-}
 
 /*--------------------------------------------ICONS-----------------------*/
 
