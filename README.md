@@ -293,6 +293,7 @@ Future features will include:
 - [Font Awesome](https://fontawesome.com/v4.7.0/) Used for icons
 - [Google Fonts](https://fonts.google.com/) Used to import fonts.
 - [Hover CSS](https://ianlunn.co.uk/articles/hover-css-tutorial-introduction) hover class on shop button.
+- [AOS Library](https://michalsnik.github.io/aos/) home page text animation.
 
 ### Programmes and Tools
 
