@@ -118,6 +118,20 @@ input[type="email"],
     color: white;
 }
 
+a.edit-btn {
+    text-decoration: none !important;
+}
+
+.edit-btn {
+    background-color: transparent;
+    color: blue;
+}
+
+.delete-btn {
+    background-color: transparent;
+    color: red;
+}
+
 .shop-btn {
     border: solid 1px white;
     color: white;
