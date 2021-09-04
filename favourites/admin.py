@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Favourites, FavouritedItem
 
-# Register your models here.
+
+admin.site.register(Favourites)
+admin.site.register(FavouritedItem)

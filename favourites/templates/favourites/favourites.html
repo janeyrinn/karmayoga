@@ -29,13 +29,13 @@
 
     <!--Start of Favourite Items-->
     <div class="row justify-content-center">
-        {% if favourite_items %}
-        {% for item in favourite_items %}
+        {% if favourited_items %}
+        {% for item in favourited_items.all %}
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-2 ">
             <div class="card h-60 border-0 shadow p-3 mb-4 bg-white rounded">
                 <small><i class="float-right far fa-heart mb-1 mr-1"></i></small>
                 <div class="row">
-                    {% if item.product.image %}
+                    {% if item.image %}
                     <a href="">
                         <img class="card-img-top img-fluid" src="{{ item.product.image.url }}"
                             alt="{{ item.product.name }}">
