@@ -176,6 +176,11 @@ a.category-filter-btn > span.cat-btn:hover {
 
 /*------Classes to Control Favourites Btns-----*/
 
+.favourite-link {
+    text-decoration: none !important;
+    cursor: pointer
+}
+
 .favourite {
     color:#f29188;
     cursor: pointer;
