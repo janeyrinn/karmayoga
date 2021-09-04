@@ -6,6 +6,8 @@ from django.contrib.auth.models import User
 class Favourites(models.Model):
     """A Model to store users favourited items"""
 
+    class Meta:
+        verbose_name = 'Favourites'
 
     user = models.OneToOneField(
         User, on_delete=models.CASCADE)
