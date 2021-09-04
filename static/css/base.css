@@ -182,12 +182,15 @@ a.category-filter-btn > span.cat-btn:hover {
 }
 
 .favourite {
-    color:#f29188;
+    color:#f29188 !important;
     cursor: pointer;
+    text-decoration: none !important;
 }
 
 .empty-favourite {
     cursor: pointer;
+    text-decoration: none !important;
+    color: #262626 !important;
 }
 
 .display-off {
