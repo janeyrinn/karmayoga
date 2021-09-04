@@ -19,7 +19,7 @@
                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
-                <a href="{{ product.image.url }}">
+                <a href="{{ product.image.url }}" target="_blank">
                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                 </a>
                 {% endif %}
@@ -36,8 +36,11 @@
                     </a>
                 </p>
                 {% endif %}
-                <small><i class="add-favourite empty-favourite far fa-heart mb-1 mr-1"></i></small>
-                <small><i class="remove-favourite favourite display-off fas fa-heart mb-1 mr-1"></i></small>
+                <!--Start of Add/Remove Favourites-->
+                {% if request.user.is_authenticated %}
+                <small><a class="favourite-link" href="{% url 'add_favourite' product.id %}"><i class="add-favourite empty-favourite far fa-heart mb-1 mr-1"></i></a></small>
+                <small><a class="favourite-link" href="{% url 'remove_favourite' product.id %}"><i class="remove-favourite favourite display-off fas fa-heart mb-1 mr-1"></i></a></small>
+                {% endif %}
                 <h2 class="mt-3">{{ product.description }}</h2>
                 <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                     {% csrf_token %}
@@ -138,11 +141,14 @@
             $('.add-favourite').addClass('display-off');
             $('.remove-favourite').removeClass('display-off');
         });
-        $(".remove-favourite").click(function () {
+    });
+
+    $(document).ready(function () {
+    $(".remove-favourite").click(function () {
             $('.remove-favourite').addClass('display-off');
             $('.add-favourite').removeClass('display-off');
         });
-
     });
+
 </script>
 {% endblock %}
