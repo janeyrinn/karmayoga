@@ -29,19 +29,21 @@
 
     <!--Start of Favourite Items-->
     <div class="row justify-content-center">
-        {% if favourited_items %}
-        {% for item in favourited_items.all %}
+        {% if favourites %}
+        {% for product in favourites.products.all %}
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-2 ">
             <div class="card h-60 border-0 shadow p-3 mb-4 bg-white rounded">
-                <small><i class="float-right far fa-heart mb-1 mr-1"></i></small>
+                <!--Start of Add/Remove Favourites-->
+                <small><a class="favourite-link float-right" href="{% url 'remove_favourite' product.id %}"><i class="remove-favourite favourite fas fa-heart mb-1 mr-1"></i></a></small>
+                <!--Start Product details-->
                 <div class="row">
-                    {% if item.image %}
-                    <a href="">
-                        <img class="card-img-top img-fluid" src="{{ item.product.image.url }}"
+                    {% if product.image %}
+                    <a href="{{ product.image.url }}" target="_blank">
+                        <img class="card-img-top img-fluid" src="{{ product.image.url }}"
                             alt="{{ item.product.name }}">
                     </a>
                     {% else %}
-                    <a href="">
+                    <a href="{{ product.image.url }}" target="_blank">
                         <img class=" card-img-top img-fluid " src="{{ MEDIA_URL }}no-image.png"
                             alt="{{ item.product.name }}">
                     </a>
@@ -49,11 +51,8 @@
 
 
                     <div class="card-body pb-0">
-                        <p class="mb-0 font-weight-bold lead text-dark">{{ item.product.name }}</p>
-                        <p class="my-0">€{{ item.product.price }}</p>
-                        <!--Start Add to Cart/Remove Links -->
-                        <a class="remove-item text-dark-pink" id="remove_{{ item.item_id }}"><small>Remove</small></a>
-                        <a class="text-blue float-right" id="remove_{{ item.item_id }}"><small>Add to Cart</small></a>
+                        <p class="mb-0 font-weight-bold lead text-dark">{{ product.name }}</p>
+                        <p class="my-0">€{{ product.price }}</p>
                     </div>
 
                 </div>
