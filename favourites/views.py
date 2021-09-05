@@ -11,7 +11,6 @@ def view_favourites(request):
     """A view to display a users favourites"""
 
     favourites = Favourites.objects.get(user=request.user)
-
     template = 'favourites/favourites.html'
     context = {
             'favourites': favourites,
