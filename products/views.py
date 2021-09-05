@@ -65,18 +65,19 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     favourited = False
-    favourites = Favourites.objects.get(user=request.user)
+    favourites = None
+    if request.user.is_authenticated:
+        favourites = Favourites.objects.get(user=request.user)
 
-    for fav in favourites.products.all():
-        if fav == product:
-            favourited = True
+        for fav in favourites.products.all():
+            if fav == product:
+                favourited = True
 
     template = 'products/product_detail.html'
     context = {
         'product': product,
         'favourites': favourites,
         'favourited': favourited,
-
     }
 
     return render(request, template, context)
