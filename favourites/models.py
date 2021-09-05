@@ -1,6 +1,8 @@
 from django.db import models
 from products.models import Product
 from django.contrib.auth.models import User
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 
 
 class Favourites(models.Model):
@@ -16,6 +18,16 @@ class Favourites(models.Model):
 
     def __str__(self):
         return f'({self.user}) Favourites'
+
+@receiver(post_save, sender=User)
+def create_favourite_list(sender, instance, created, **kwargs):
+    """
+    Create the user favourites when a profile is created
+    """
+    if created:
+        Favourites.objects.create(user=instance)
+    # Existing users: just save the favourites
+        instance.favourites.save()
 
 
 class FavouritedItem(models.Model):
