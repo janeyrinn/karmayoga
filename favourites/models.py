@@ -19,6 +19,7 @@ class Favourites(models.Model):
     def __str__(self):
         return f'({self.user}) Favourites'
 
+
 @receiver(post_save, sender=User)
 def create_favourite_list(sender, instance, created, **kwargs):
     """
