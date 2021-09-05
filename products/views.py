@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
+from favourites.models import Favourites
 
 from .models import Product, Category
 from .forms import ProductForm
@@ -48,6 +49,7 @@ def all_products(request):
 
     current_sorting = f'{sort}_{direction}'
 
+    template = 'products/products.html'
     context = {
         'products': products,
         'search_term': query,
@@ -55,19 +57,29 @@ def all_products(request):
         'current_sorting': current_sorting,
     }
 
-    return render(request, 'products/products.html', context)
+    return render(request, template, context)
 
 
 def product_detail(request, product_id):
     """ A view to return the selected product details"""
 
     product = get_object_or_404(Product, pk=product_id)
+    favourited = False
+    favourites = Favourites.objects.get(user=request.user)
 
+    for fav in favourites.products.all():
+        if fav == product:
+            favourited = True
+
+    template = 'products/product_detail.html'
     context = {
         'product': product,
+        'favourites': favourites,
+        'favourited': favourited,
+
     }
 
-    return render(request, 'products/product_detail.html', context)
+    return render(request, template, context)
 
 
 @login_required
