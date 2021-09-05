@@ -28,7 +28,7 @@
 
     <!--Start of Favourite Items-->
     <div class="row justify-content-center">
-        {% if favourites > 0 %}
+        {% if favourites.products.all.count > 0 %}
         {% for product in favourites.products.all %}
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-2 ">
             <div class="card h-60 border-0 shadow p-3 mb-4 bg-white rounded">
