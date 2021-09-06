@@ -22,28 +22,40 @@
         <li class="nav-item dropdown">
             <a class="main-nav-font  nav-link text-white mr-5" id="equipment-link" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                Equipment
+                Yoga
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="equipment-link">
                 <a href="{% url 'products' %}?category=Mats" class="dropdown-item">Mats</a>
                 <a href="{% url 'products' %}?category=Blocks" class="dropdown-item">Blocks</a>
                 <a href="{% url 'products' %}?category=Straps" class="dropdown-item">Straps</a>
                 <a href="{% url 'products' %}?category=Other" class="dropdown-item">Other</a>
-                <a href="{% url 'products' %}?category=Mats,Straps,Blocks,Other" class="dropdown-item">All Equipment</a>
+                <a href="{% url 'products' %}?category=Mats,Straps,Blocks,Other" class="dropdown-item">All Yoga</a>
             </div>
         </li>
-        <!--Start Clothing Dropdown-->
+                <!--Start Meditation Dropdown-->
+                <li class="nav-item dropdown">
+                    <a class="main-nav-font  nav-link text-white mr-5" href="#" id="meditation-link" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Meditation
+                    </a>
+                    <div class="dropdown-menu border-0" aria-labelledby="meditation-link">
+                        <a href="{% url 'products' %}?category=Pillows" class="dropdown-item">Pillows</a>
+                        <a href="{% url 'products' %}?category=Bowls" class="dropdown-item">Bowls</a>
+                        <a href="{% url 'products' %}?category=Diffusers" class="dropdown-item">Diffusers</a>
+                        <a href="{% url 'products' %}?category=Manuals,Auto/Biography/Spiritual" class="dropdown-item">All Meditation</a>
+                    </div>
+                </li>
+        <!--Start Books Dropdown-->
         <li class="nav-item dropdown">
-            <a class="main-nav-font  nav-link text-white mr-5" href="#" id="clothing-link" data-toggle="dropdown"
+            <a class="main-nav-font  nav-link text-white mr-5" href="#" id="books-link" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                Clothing
+                Books
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?category=Leggings" class="dropdown-item">Leggings</a>
-                <a href="{% url 'products' %}?category=Socks" class="dropdown-item">Socks</a>
-                <a href="{% url 'products' %}?category=Tops" class="dropdown-item">Tops</a>
-                <a href="{% url 'products' %}?category=Sweaters" class="dropdown-item">Sweaters</a>
-                <a href="{% url 'products' %}?category=Mats,Straps,Blocks,Other" class="dropdown-item">All Clothing</a>
+            <div class="dropdown-menu border-0" aria-labelledby="books-link">
+                <a href="{% url 'products' %}?category=Manuals" class="dropdown-item">Manuals</a>
+                <a href="{% url 'products' %}?category=Auto/Biography" class="dropdown-item">Auto/Biography</a>
+                <a href="{% url 'products' %}?category=Spiritual" class="dropdown-item">Spiritual</a>
+                <a href="{% url 'products' %}?category=Manuals,Auto/Biography/Spiritual" class="dropdown-item">All Books</a>
             </div>
         </li>
     </ul>
