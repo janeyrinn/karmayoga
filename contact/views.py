@@ -2,6 +2,9 @@ from django.shortcuts import (render, redirect,
                               reverse)
 from django.contrib import messages
 from .forms import ContactForm
+from django.conf import settings
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
 
 
 def contact(request):
@@ -13,7 +16,22 @@ def contact(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Message Sent!')
-            return redirect(reverse('contact'))
+
+            instance = form.save()
+            """ Sends an email to confirm contact recieved """
+            sender_email = instance.email
+            subject = render_to_string(
+                'contact/confirmation_emails/subject_contact_email.txt',
+                {'instance': instance})
+            body = render_to_string(
+                'contact/confirmation_emails/body_contact_email.txt',
+                {'instance': instance,
+                 'contact_email': settings.DEFAULT_FROM_EMAIL})
+            send_mail(
+                subject,
+                body, settings.DEFAULT_FROM_EMAIL,
+                [sender_email]
+            )
         else:
             messages.error(
                 request,

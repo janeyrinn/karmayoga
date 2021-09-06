@@ -1,0 +1,12 @@
+Hi {{ instance.name }}  
+
+Thank you for getting in touch with us!
+
+We have received your message: 
+
+{{ instance.subject }} 
+
+We will respond to your message as soon as possible.
+
+Namaste,
+Karma Yoga
