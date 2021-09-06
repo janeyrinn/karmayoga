@@ -390,6 +390,8 @@ The 'repo' should then open and you can begin working on it by selecting the gre
 
 ### Images
 1. Hero Image by [Concious Design](https://unsplash.com/@conscious_design)
+2. Products Images from [Ali Express](https://www.aliexpress.com/w/wholesale-yoga-block.html?spm=a2g0o.home.100000001.1.87872145xNoAZC)
+3. Book Images from [Book Depository](https://www.bookdepository.com/)
 
 ### Code
 1. CSS rule from [GitHub Gist](https://gist.github.com/juliuscsurgo/4440047) to remove blue glow from input elements
