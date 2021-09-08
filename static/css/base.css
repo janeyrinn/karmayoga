@@ -76,6 +76,10 @@ input[type="email"],
     color: #f29188 !important;
 }
 
+.form-control:active {
+    box-shadow: none !important;
+    border:1px solid #262626 !important;
+}
 
 /*--------------------------------------------ICONS-----------------------*/
 
