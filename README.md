@@ -139,11 +139,15 @@ The product detail page will display the image and details with an option to pur
 
 The nav bar items will highlight on hover.
 
-The user will be able to interact with the data on the application via the search bar, products will display below the search bar if found or a message with an error if not found.
+The user will be able to interact with the data on the application via the search bar, products will display below the search bar if found or a line of text with '0 products found' if not found. They can also filter and sort categories using a sort selector drop down.
 
 All forms will validate and change colour/display messages to notify the user of errors.
 
+Delete features will trigger warning modals and require confirmation before the action runs.
+
 Successful actions and unsuccessful actions will be flagged with django messages to the user.
+
+Authentication processes, placed orders and contact form submission will trigger emails sent to the users email address provided.
 
 ### Wireframes
 A mock-up of how the site will be laid out is available here via [Wire Frames](read-me/karma-yoga-wireframes.pdf).
