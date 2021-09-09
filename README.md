@@ -111,11 +111,12 @@ A registered users goals are in addition to the above mentioned user goals.
 * Informative Landing Page
 * Sticky top Nav Bar & Mobile Nav Bar 
 * Relational database to store all uploaded data/content
-* CRUD functionality for profiles and products
+* CRUD functionality at varying levels for profiles and products
 * Authentication functionality
 * Profile page
 * Search functionality
 * Contact functionality
+* Favourites list functionality
 * E-Commerce functionality
 
 **Skeleton Structure**
