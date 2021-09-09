@@ -72,9 +72,9 @@ A simulation of the website on desktop and mobile devices can be seen below.
 | easily navigate the site| quickly find what I need |
 | find information is clearly presented | absorb it with minimal effort |
 | view the site on different screen sizes| use it on a desktop or on the go |
-| view/search products and class passes | find items quickly |
-| purchase products/class passes online | save time & travel expense |
-| contact the studio on their site | enquire without opening a secondary platform |
+| view/search products | find items quickly |
+| purchase products online | save time & travel expense |
+| contact the store on their site | enquire without opening a secondary platform |
 | recieve feedback for my actions | to determine whether they were successfull |
 
 #### Registered Consumer
@@ -86,8 +86,8 @@ A registered users goals are in addition to the above mentioned user goals.
 | save my information to a profile | use it again easily |
 | recieve an email confirmation of my registration | verify succesful registration |
 | easily login and logout | to keep my info secure |
-| reset a lost password | recover access to y account |
-| edit/delete my profile | manage my information |
+| reset a lost password | recover access to my account |
+| edit my profile | manage my information |
 | view past orders | keep track of them |
 | be able to favourite items to my profile | access them easily for re-purchase or review |
 
@@ -95,9 +95,9 @@ A registered users goals are in addition to the above mentioned user goals.
 
 | **As an admin user I would like to ** : |  **So that I can**  : |
 | ------------- |:-------------:|
-|  have an informative web application | use it as a marketing tool |
-|  sell products and class passes | generate revenue |
-|  have a record of user/student information | use it for marketing and other business purposes |
+|  have an informative web application | use it as an e-commerce tool |
+|  sell products | generate revenue |
+|  have a record of user information | use it for marketing and other business purposes |
 |  have a contact form on the app | manage enquiries via email only |
 |  upload, edit and delete products through the frontend | manage stock and product/service offering over time |
 
