@@ -383,8 +383,12 @@ The below python modules were used and are fundamental to the project
 
 _General sources of information for structure functionality and styling._
 
-- Code Institute, Full Stack Development course material.
+- Code Institute, Full Stack Development course material, slack community and tutor support.
 - [CodexWorld](https://www.codexworld.com/) JS learning. 
+- [Django Documentation](https://docs.djangoproject.com/en/3.2/)
+- [Stripe Documentation](https://stripe.com/docs).
+- [Stack OverFlow](https://stackoverflow.com/).
+
 
 ## Testing
 
