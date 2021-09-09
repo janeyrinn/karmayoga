@@ -440,7 +440,9 @@ Testing was done on three browsers; Chome v93 , Opera 78 and FireFox v91 on the 
 Testing was documented using Microsoft Excel and the full spreadsheet can be found [here](). 
 Bugs found in the code and their fixes can also be found in the Excel document.
 
-The live site was also analysed using Google Developer Tools Lighthouse feature
+The live site was also analysed using Google Developer Tools Lighthouse feature which it scored high for performance, accessibility, and SEO. Best practices also rates highly but was compromised by using third party JavaScript libraries.
+
+![Light House Score](read-me/lighthouse.png)
 ### User Stories
 
 ### Features
