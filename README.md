@@ -2,7 +2,7 @@
 
 Karma Yoga is an e-commerce web application developed as part of 
 [*Code Institute, Diploma in Full Stack Software Development*](https://codeinstitute.net/full-stack-software-development-diploma/).
-It is the final milestone project in a series of four projects.
+It is the final milestone project in a series of four projects. No revenue has been generated from this site and is for project purposes only.
 
 The live site can be accessed [*here*](https://karmayoga-ecommerce-store.herokuapp.com/).
 
@@ -45,7 +45,7 @@ The live site can be accessed [*here*](https://karmayoga-ecommerce-store.herokua
     * [Acknowledgements](#Acknowledgements)
 ## Strategic Purpose Overview
 
-Karma Yoga is a full stack e-commerce web application for a theoretical yoga studio. The site as well as being an informative marketing tool, also facilitates the sale of class passes and yoga equipment available at the studio. Consumers will be able to purchase class passes to allow them entry to class or purchase equipment they may require for their yoga practice. Registered users will be able to save, update and delete their information and view past orders on a profile, as well as save their favourite products/passes for ease of access in the future. The site will also facilitate a means of contact to the studio via a contact form. The administrator will be able to update, edit and delete products from the frontend and monitor orders and users information from the backend.
+Karma Yoga is a full stack e-commerce web application for a theoretical supplies store. The site facilitates the sale of yoga equipment and related materials. Consumers will be able to purchase items they may require for their yoga practice. Registered users will be able to save and update their personal information and view past orders on a profile, as well as save their favourite products for ease of access in the future. The site will also facilitate a means of contact of the store via a contact form. The administrator will be able to update, edit and delete products from the frontend and monitor orders and users information from the backend.
 
 Karma Yoga is a fully responsive data driven application using HTML, CSS, JavaScript, Python, Django Frameworks, a Postgres relational database and Stripe Payment technology. The user interface is based on the principles of good UX design. The application is cloud hosted via AWS and Heroku.
 
