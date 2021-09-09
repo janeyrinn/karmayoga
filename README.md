@@ -53,7 +53,7 @@ Karma Yoga is a fully responsive data driven application using HTML, CSS, JavaSc
 
 A simulation of the website on desktop and mobile devices can be seen below.
 
-![Design Simulation]()
+![Design Simulation](read-me/simulation.png)
 
  The live site can be accessed [*here*](https://karmayoga-ecommerce-store.herokuapp.com/).
 
@@ -371,7 +371,7 @@ The below python modules were used and are fundamental to the project
 - [Git/GitPod](https://www.gitpod.io/#:~:text=Gitpod%20is%20a%20multi%2Dservice,their%20own%20dedicated%20K8s%20deployment.) Code, build, debug and run applications    entirely in the cloud.
 - [Canva](https://www.canva.com/) For the creation of the logo
 - [Adobe Color Wheel](https://color.adobe.com) Image gradient feature was used to extract colors used in the logo and build a colour scheme
-- [Techsini](http://techsini.com/multi-mockup/index.php/) Used to check responsivity of code and display the mock-up in the documentation
+- [Techsini](http://techsini.com/multi-mockup/index.php) Used to check responsivity of code and display the mock-up in the documentation
 - [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) Used to test and optimize the site
 - [Random Key Gen](https://randomkeygen.com/) to great random secret keys
 - [Red Ketchup](https://redketchup.io/favicon-generator) to create the favicon
