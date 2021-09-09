@@ -185,7 +185,7 @@ A mock-up of how the site will be laid out is available here via [Wire Frames](r
 - This model is linked to the user and to the poduct model.
 
 ##### Contact
-The contact model stores users queries in the backend for the admin user to view.
+- The contact model stores users queries in the backend for the admin user to view.
 
 ### Security
 
@@ -224,9 +224,9 @@ For a detailed list of photographic image sources please see the [credits](#cred
 ### Existing Features
 
 1. Responsive to different screen sizes.
-2. Supported by Chrome, Microsoft Edge, and Firefox browsers.
+2. Supported by Chrome, Opera, and Firefox browsers.
 3. Adapted for users with special accessibility requirements where possible.
-4. There will be 14 pages: Landing page, all products page, categorized product page, product detail page, shopping bag, checkout page, successfull check out page, profile page, login page, sign up page, delete/edit product page, contact form page, 404 error and 500 error page.
+4. There will be multiple pages: Landing page, all products page, product detail page, shopping bag, checkout page, successfull check out page, profile page, login page, sign up page, delete/edit product page, contact form page, favourites page, 404 error and 500 error page.
 
         - Each page will have a navigation header
         - Each page will have a footer
@@ -234,9 +234,9 @@ For a detailed list of photographic image sources please see the [credits](#cred
 
 5. Each page will have a 'sticky' navbar
 
-        - White with black text or the reverse
+        - High contrast between text and background.
         - Text logo on the left, or removed on smaller screens
-        - a central search bar
+        - A central search bar
         - Menu options in the center or to the left on mobile
         - The logo will route back to the home page
         - Menu options will change to color on hover & envoke a pointer
@@ -253,19 +253,20 @@ For a detailed list of photographic image sources please see the [credits](#cred
 7. The login/register page will have:
 
         - A form requesting user information (name, username & password) and a submission button
+        - Toast messages displaying successfull/unsuccessfulsubmission of information
 
 8. The profile page will have: 
 
         - An area displaying the users information
         - An area displaying orders the user has purchased
-        - There will be an option to edit/delete information
-        - A favourites section
+        - There will be an option to edit information
+        - Toast messages displaying successfull/unsuccessful update of information
 
 9. The all products page will have:
 
         - A sort by category bar
-        - A section displaying existing products and class passes
-        - Each product will have an image, label, favourite icon and a link to review its details
+        - A section displaying existing products
+        - Each product will have an image, label and a link to review its details
         - To an admin user there will be a link to edit/delete
 
 10. The product detail page will have:
@@ -278,35 +279,45 @@ For a detailed list of photographic image sources please see the [credits](#cred
         - Add to cart button
         - Go back button
         - Edit/Delete link for the admin user only
-        - Messages displaying successfull addition of products to the shopping bag
+        - Toast messages displaying successfull/unsuccessful addition of products to the shopping bag
 
 11. The shopping bag page will have:
 
         - Images and descriptions of products
-        - Option to edit quantity or remove products, with messages conveying these actions
+        - Option to edit quantity or remove products
         - Grand total calculation
         - Keep shopping button
         - Continue to checkout button
+        - Toast messages displaying successfull/unsuccessful removal of products
 
 12. The check out page will have:
 
-        - A form requesting order details
+        - A form requesting/prepopulating order details
         - An order summary
         - A stripe payment option
         - A check box to save info to a profile
         - A grand total
         - Messages to convey successful or unsuccessful check out
 
-14. The categorized product page will have the same features as the 'all product page' but will be pre filtered to that specific category.
+14. The favourites page will have:
+
+        - Has cards displaying favourited items that link to product detail view.
+        - Heart icons on the cards that allow removal.
+        - If emptry a navigation button to the all products page.
+        - Toast messages to convey successful or unsuccessful removal of items.
 
 15. The contact form page will have a form with fields for:
 
         - Name
         - Email
-        - Drop down for book a class, gen enquiry or my orders
+        - Drop down menu for the subject title
         - Text box
+        - Submission button
+        - Toast messages to convey successful or unsuccessful submission of the form.
 
-16. All users interactions will either be confirmed or notified of an error eith via on screen messages, orders and profile set up will be also confirmed via email.
+16. All users interactions will either be confirmed or notified of an error either via on screen messages, orders, contact forms and profile set up will be also confirmed via email.
+
+17. All products page and the cart page will have a scroll to top button.
 ### Future Features
 
 Future features will include:
