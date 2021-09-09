@@ -14,7 +14,7 @@ class Contact(models.Model):
     A Contact model for admin to view users queries
     """
     class Meta:
-        verbose_name = 'Query'
+        verbose_name_plural = 'Queries'
 
     name = models.CharField(max_length=100, null=False, blank=False)
     email = models.EmailField(max_length=150, null=False, blank=False)
