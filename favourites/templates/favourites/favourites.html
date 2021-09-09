@@ -37,12 +37,12 @@
                 <!--Start Product details-->
                 <div class="row">
                     {% if product.image %}
-                    <a href="{{ product.image.url }}" target="_blank">
+                    <a href="{% url 'product_detail' product.id %}" target="_blank"> 
                         <img class="card-img-top img-fluid" src="{{ product.image.url }}"
                             alt="{{ item.product.name }}">
                     </a>
                     {% else %}
-                    <a href="{{ product.image.url }}" target="_blank">
+                    <a href="{% url 'product_detail' product.id %}" target="_blank">
                         <img class=" card-img-top img-fluid " src="{{ MEDIA_URL }}no-image.png"
                             alt="{{ item.product.name }}">
                     </a>
