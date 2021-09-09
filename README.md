@@ -400,7 +400,47 @@ The syntax and validity of the HTML and JavaScript code used were passed through
 
 The python was run with pylint in the terminal. Errors were ammended to bring the score 
 ### Testing Premise
+The entire site was tested under the three premises of :
 
+>* User Stories
+>* Business Objective
+>* Features
+>* Functionality - CRUD, Error Handeling, Security
+
+Testing was done on three browsers; Chome v93 , Opera 78 and FireFox v91 on the below screen sizes:
+
+**Chrome & Opera**
+>* Moto G4 (640 x 360)
+>* Galaxy S5 (360 x 640)
+>* Pixel 2 (411 x 731)
+>* Pixel 2 XL (411 x 823)
+>* iPhone 5/SE (320 x 568)
+>* iPhone 6/7/8 (375 x 667)
+>* iPhone 6/7/8 Plus (414 x 736)
+>* iPhone X (375 x 812)
+>* iPad (768 x 1024)
+>* Surface Duo (540 x 720)
+>* Galaxy Fold (280 x 653)
+>* Laptop (1440 x 900)
+
+**Mozilla Fire Fox**
+
+>* Galaxy Note 3 (360 x 640)
+>* Galaxy Note 9 (414 x 846)
+>* Galaxy S5 (360 x 640)
+>* Galaxy S9 (360 x 740)
+>* iPad (768 x 1024)
+>* iPhone 5/SE (320 x 568)
+>* iPhone 6/7/8 (375 x 667)
+>* iPhone 6/7/8 Plus (414 x 736)
+>* iPhone X/XS (375 x 812)
+>* iPhone XR (414 x 896)
+>* Laptop (1440 x 900)
+
+Testing was documented using Microsoft Excel and the full spreadsheet can be found [here](). 
+Bugs found in the code and their fixes can also be found in the Excel document.
+
+The live site was also analysed using Google Developer Tools Lighthouse feature
 ### User Stories
 
 ### Features

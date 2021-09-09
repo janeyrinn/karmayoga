@@ -61,8 +61,9 @@
             <!--Nav Logo-->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link logo-link">
-                    <h1 class="text-dark logo-text"> <img class="nav-logo" src="{% static 'images/lotus.png' %}"
-                            alt="logo"> K a r m a<span class="text-dark-pink"> Y o g a</span></h1>
+                    <h1 class="text-dark logo-text font-weight-bold"> <img class="nav-logo" src="{% static 'images/lotus.png' %}"
+                            alt="logo"> K a r m a<span class="text-dark-pink "> Y o g a</span></h1>
+                            <span class="sr-only">logo</span>
                 </a>
             </div>
             <!--Search Bar-->
@@ -75,6 +76,7 @@
                             <button class="btn rounded-0" type="submit">
                                 <span class="icon">
                                     <i class="fas fa-search"></i>
+                                    <span class="sr-only">Search Button</span>
                                 </span>
                             </button>
                         </div>
