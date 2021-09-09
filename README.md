@@ -394,12 +394,12 @@ _General sources of information for structure functionality and styling._
 ### Code Validity 
 The syntax and validity of the HTML and JavaScript code used were passed through the two validators mentioned below and passed all tests without errors.
 
-        - [W3C](https://www.validator.w3.org/)
-        - [JS Hint](https://jshint.com/)
+- [W3C](https://www.validator.w3.org/)
+- [JS Hint](https://jshint.com/)
 
 The syntax and validity of the CSS code was passed throught the below validator and passed without error but did show warnings related to vendor prefixes.I have been advised by tutor support that this is fine for the submission of the MS3 and should not affect the outcome of the submission as it is unavoidable with the current version of this validator.
 
-         - [W3c Jigsaw](https://jigsaw.w3.org/css-validator/)
+- [W3c Jigsaw](https://jigsaw.w3.org/css-validator/)
 
 The python was run with pylint in the terminal. Errors were ammended to bring the score 
 ### Testing Premise
@@ -430,14 +430,25 @@ The 'repo' should then open and you can begin working on it by selecting the gre
 3. Select 'Create New App' from the buttons drop down menu
 4. Add your app name (it must be unique, lowercase with a dash used instead of spaces)
 5. Select the region closest to you and click create app
-6. You will then need to connect your GitHub Repository, in the deploy tab, under method, select "Connect to GitHub".
-7. Connect your GitHub account, ensure the correct profile name is displayed
-8. Then add your repository name, search and select the correct repository
-9. Click the resources tab.
-10. Under Add-ons seach for Heroku Postgres and then click on it when it appears.
-11. Select Plan name Hobby Dev - Free and then click Submit Order Form.
-12. To set the environment variables open the settings tab and select 'Reveal Config Vars'
-13. Add the following variable keys and the values you have chosen :
+6. Install 'dj_database_url' and 'psycopg2' via the CLI using the pip3 install prefixed to the module names
+>* pip3 install dj_database_url
+>* pip3 install psycopg2
+7. Login to Heroku via the CLI 
+>* 'heoku login -i'
+8. Run migration on the Heroku Postgres -
+>* 'heroku run python manage.py migrate'
+9. Create a new super user for this deployed version 
+10. Install 'gunicorn' and then freeze to your requirments.txt
+11. Create the 'Procfile' note the capital 'P' and add :
+
+>* web: gunicorn `your-app-name`.wsgi:application
+
+12. Disable Heroku from collecting static files - 
+>* 'heroku config:set DISABLE_COLLECTSTATIC=1 --app `your-app-name`
+13. Add the host name to your settings.py file, under ALLOWED_HOSTS
+>* ALLOWED_HOSTS = ['`you-app-name`.herokuapp.com', 'localhost']
+14. To set the environment variables open the settings tab and select 'Reveal Config Vars'
+15. Add the following variable keys and the values you have chosen :
     - AWS_ACCESS_KEY_ID
     - AWS_SECRET_ACCESS_KEY
     - DATABASE_URL
@@ -448,12 +459,14 @@ The 'repo' should then open and you can begin working on it by selecting the gre
     - STRIPE_PUBLIC_KEY
     - STRIPE_SECRET_KEY
     - STRIPE_WH_SECRET
-    - USE_AWS
+    - USE_AWS = True
 
-14. Hide Con Fig Vars and reopen the deploy tab
-15. Under automatic deployment enable automatic deployment
-16. In manual deploy section select the branch you wish to deploy from the drop down and click deploy branch
-17. This will take a few moments, once complete and option to view the live app will appear
+16. Hide Con Fig Vars and reopen the deploy tab
+17. Add an commit your changes in the CLI, then use the below to to deploy to Heroku :
+>* git push Heroku master
+18. You will then need to connect your GitHub Repository, in the deploy tab, under method, select "Connect to GitHub". Connect your GitHub account, ensure the correct profile name is displayed. Then add your repository name, search and select the correct repository.
+19. Under automatic deployment, enable automatic deployment.
+20. You can now deploy via the heroku dashboard by clicking the `open app` button. At this stage your site have deployed with out any static files.
 
 ### Make a clone on GitPod
 
