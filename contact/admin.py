@@ -4,7 +4,6 @@ from .models import Contact
 
 class ContactAdmin(admin.ModelAdmin):
     list_display = (
-        'user',
         'date_sent',
         'subject',
         'name',
