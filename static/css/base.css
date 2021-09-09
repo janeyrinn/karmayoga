@@ -76,11 +76,6 @@ input[type="email"],
     color: #f29188 !important;
 }
 
-.form-control:active,
-.form-control:focus {
-    box-shadow: none !important;
-}
-
 /*--------------------------------------------ICONS-----------------------*/
 
 .icon-footer:hover {
