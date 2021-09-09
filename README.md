@@ -322,8 +322,8 @@ For a detailed list of photographic image sources please see the [credits](#cred
 
 Future features will include:
 
->   * An online booking system
->   * A chat forum for members of workshops or training courses at the studio
+>   * A subscription feature to view/ access online classes and workshops
+>   * A chat forum for members of workshops, classes or training courses.
 
 ## Technologies
 
@@ -333,6 +333,28 @@ Future features will include:
  - [CSS3](https://www.w3schools.com/css/css_intro.asp) for custom styling
  - [JavaScript](https://www.w3schools.com/js/js_intro.asp) for interactive elements
  - [Python](https://www.w3schools.com/python/python_intro.asp) for backend, a full list of the modules used can be found in the requirements.txt file
+The below python modules were used and are fundamental to the project
+> asgiref==3.4.1
+> boto3==1.18.36
+> botocore==1.21.36
+> dj-database-url==0.5.0
+> Django==3.2.6
+> django-allauth==0.45.0
+> django-countries==7.2.1
+> django-crispy-forms==1.12.0
+> django-storages==1.11.1
+> gunicorn==20.1.0
+> jmespath==0.10.0
+> oauthlib==3.1.1
+> Pillow==8.3.1
+> psycopg2-binary==2.9.1
+> PyJWT==2.1.0
+> python3-openid==3.2.0
+> pytz==2021.1
+> requests-oauthlib==1.3.0
+> s3transfer==0.5.0
+> sqlparse==0.4.1
+> stripe==2.60.0
   ### Frameworks and Libraries
 
 - [DJango](https://www.djangoproject.com/) functionality of the backend.
@@ -349,12 +371,12 @@ Future features will include:
 - [Git/GitPod](https://www.gitpod.io/#:~:text=Gitpod%20is%20a%20multi%2Dservice,their%20own%20dedicated%20K8s%20deployment.) Code, build, debug and run applications    entirely in the cloud.
 - [Canva](https://www.canva.com/) For the creation of the logo
 - [Adobe Color Wheel](https://color.adobe.com) Image gradient feature was used to extract colors used in the logo and build a colour scheme
-- [Am I Responsive](http://ami.responsivedesign.is/) Used to check responsivity of code and display the mock-up in the documentation
+- [Techsini](http://techsini.com/multi-mockup/index.php/) Used to check responsivity of code and display the mock-up in the documentation
 - [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) Used to test and optimize the site
 - [Random Key Gen](https://randomkeygen.com/) to great random secret keys
 - [Red Ketchup](https://redketchup.io/favicon-generator) to create the favicon
 - [Database Diagram](https://dbdiagram.io/) to create the database schema diagram
-- [Heroku](https://dashboard.heroku.com/) cloud based hosting.
+- [Heroku](https://dashboard.heroku.com/) cloud based hosting and heroku postgres database.
 - [AWS](https://aws.amazon.com/) cloud based storage.
 
 ### Sources
