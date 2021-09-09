@@ -4,7 +4,7 @@ Karma Yoga is an e-commerce web application developed as part of
 [*Code Institute, Diploma in Full Stack Software Development*](https://codeinstitute.net/full-stack-software-development-diploma/).
 It is the final milestone project in a series of four projects.
 
-The live site can be accessed [*here*](INSERT HERE).
+The live site can be accessed [*here*](https://karmayoga-ecommerce-store.herokuapp.com/).
 
 *Please note: To open any links in this document in a new browser tab, please press `CTRL + Click`.*
 
@@ -55,7 +55,7 @@ A simulation of the website on desktop and mobile devices can be seen below.
 
 ![Design Simulation]()
 
- The live site can be accessed [*here*]().
+ The live site can be accessed [*here*](https://karmayoga-ecommerce-store.herokuapp.com/).
 
 *Please note: To open any links in this document in a new browser tab, please press `CTRL + Click`.*
 
