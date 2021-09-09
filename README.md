@@ -562,5 +562,15 @@ The 'repo' should then open and you can begin working on it by selecting the gre
 
 ### Code
 1. CSS rule from [GitHub Gist](https://gist.github.com/juliuscsurgo/4440047) to remove blue glow from input elements
+2. Code Institute Boutique Ado Full Stack, Frameworks with Django Project.
+3. Some styling for form inputs came from the CSS from [Stripe Documentation](https://stripe.com/docs).
 
 ## Acknowledgements
+
+1. Huge thanks to **Harry Dillon** who has been a great source of advice and guidance through out the duration of this project and the diploma as a whole. Harry helped with testing and stream lining multiple parts of this project. He helped with my understanding of how models work, which ultimately helped with the creation of my two models, contact and favourites.
+
+2. Special thanks to my mentor Rohit Sharma who is a calming presense and excellent guide who pushes for excellence always.
+
+3. A thank you to **Daisy McGirr** for her assistance with deployment.
+
+4. Last but not least a resounding thank you to **Jo, Sean, John and Scott** on the CI tutoring team for their assistance and unfailing good natured humour no matter the situation.
