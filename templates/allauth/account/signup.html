@@ -12,8 +12,6 @@
 
 <h4 class="text-muted font-italic text-dark-pink">Sign up to store your info for quicker checkout, favourite must have products and view past orders!</h4>
 
-<p>{% blocktrans %}Already have an account? Then please <a class="font-weight-bold text-dark-pink mt-1" href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
-
 <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
   {% csrf_token %}
   {{ form.as_p }}
@@ -23,4 +21,5 @@
   <button class="btn-gen btn rounded-0" type="submit">{% trans "Sign Up" %} &raquo;</button>
 </form>
 
+<p>{% blocktrans %}Already have an account? Then please <a class="font-weight-bold text-dark-pink mt-1" href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
 {% endblock %}
