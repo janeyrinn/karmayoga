@@ -452,6 +452,7 @@ The 'repo' should then open and you can begin working on it by selecting the gre
     - AWS_ACCESS_KEY_ID
     - AWS_SECRET_ACCESS_KEY
     - DATABASE_URL
+    - DISABLE_COLLECT_STATIC = 1
     - EMAIL_HOST_PASS
     - EMAIL_HOST_USER
     - SECRET_KEY
@@ -467,6 +468,71 @@ The 'repo' should then open and you can begin working on it by selecting the gre
 18. You will then need to connect your GitHub Repository, in the deploy tab, under method, select "Connect to GitHub". Connect your GitHub account, ensure the correct profile name is displayed. Then add your repository name, search and select the correct repository.
 19. Under automatic deployment, enable automatic deployment.
 20. You can now deploy via the heroku dashboard by clicking the `open app` button. At this stage your site have deployed with out any static files.
+
+### AWS S3 Bucket 
+1. Create your AWS account
+2. Search for S3 and create a new bucket, select 'allow public access'
+3. Under Properties go to static website hosting. Select enable typle index.html as index.html and save.
+4. In Permissions, under CORS use :
+>* [
+  {
+      "AllowedHeaders": [
+          "Authorization"
+      ],
+      "AllowedMethods": [
+          "GET"
+      ],
+      "AllowedOrigins": [
+          "*"
+      ],
+      "ExposeHeaders": []
+  }
+]
+5. Still in permissions, select bucket policy:
+>* Generate bucket policy and copy the bucket ARN
+>* Choose S3 Bucket Policy as type of policy
+>* For Principle enter *
+>* Paste ARN copied from above
+>* Add Statement
+>* Generate Policy
+>* Copy Policy JSON Document
+>* Paste policy into Edit Bucket policy on the previous tab
+>* Save 
+6. Under Access Control List (ACL):
+>* For Everyone (public access), tick List
+>* Accept that everyone in the world may access the Bucket
+>* Save
+
+### AWS IAM
+1. From the IAM dashboard within AWS, select User Groups:
+>* Create a new group
+>* Click through and create group
+2. Select Policies:
+>* Create policy
+>* Under JSON tab, click Import managed policy
+>* Choose AmazongS3FullAccess
+>* Edit the resource to include the Bucket ARN noted earlier when creating the Bucket Policy
+>* Click next step and go to Review policy
+>* Give the policy a name and description of your choice
+>* Create policy
+3. Go back to User Groups and choose the group created earlier
+>* Under Permissions > Add permissions, choose Attach Policies and select the one just created
+>* Add permissions
+4. Under Users::
+>* Choose a user name
+>* Selecet programmatic access as the access type
+>* Click through next
+>* Add the user to the group just created
+>* Click next and creat user
+5. Download the ``.csv` containing the access key and secret access key.
+>* The `.csv` file is onlu available once and cannot be downloaded again
+
+### Connecting Heroku to AWS S3
+1. Install boto3 and django-storages and freeze your requirements
+2. Add the values from the `.csv` you downloaded to the Heroku configvars
+3. Delete 'DISABLE_COLLECT_STATIC = 1' from the config vars
+4. Deploy the app
+5. In the S3 bucket, set up a new media folder at the same level as the tatic folder and upload any required files. Both files need to be publicly accessible.
 
 ### Make a clone on GitPod
 
