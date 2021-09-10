@@ -570,8 +570,22 @@ The 'repo' should then open and you can begin working on it by selecting the gre
 1. Install boto3 and django-storages and freeze your requirements
 2. Add the values from the `.csv` you downloaded to the Heroku configvars
 3. Delete 'DISABLE_COLLECT_STATIC = 1' from the config vars
-4. Deploy the app
-5. In the S3 bucket, set up a new media folder at the same level as the tatic folder and upload any required files. Both files need to be publicly accessible.
+4. Create a custom storage python file in your development environment with the following
+
+>* from django.conf import settings
+>* from storages.backends.s3boto3 import S3Boto3Storage
+
+
+>* class StaticStorage(S3Boto3Storage):
+    location = settings.STATICFILES_LOCATION
+
+
+>* class MediaStorage(S3Boto3Storage):
+    location = settings.MEDIAFILES_LOCATION
+
+
+5. Deploy the app
+6. In the S3 bucket, set up a new media folder at the same level as the tatic folder and upload any required files. Both files need to be publicly accessible.
 
 ### Make a clone on GitPod
 
