@@ -391,6 +391,11 @@ _General sources of information for structure functionality and styling._
 
 
 ## Testing
+
+To test the payments functionality of the site you will need the below test credit card numbers from the [Stripe Documentation](https://stripe.com/docs/testing):
+
+>* Number: 4242 4242 4242 4242  
+>* Exp. Date: Anything (e.g. 02/24) CVC: Anything (e.g. 007)
 ### Code Validity 
 The syntax and validity of the HTML and JavaScript code used were passed through the two validators mentioned below and passed all tests without errors.
 
