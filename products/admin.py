@@ -1,6 +1,8 @@
 from django.contrib import admin
 from .models import Category, Product
 
+""" Renders the two models to the admin backend"""
+
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (

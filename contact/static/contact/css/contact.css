@@ -1,7 +1,9 @@
+/*CSS Specific to the Contact Form*/
+
 .form-box-style,
 #id_name {
     box-sizing: border-box !important;
-    
+
     padding: 10px 12px !important;
     border: 1px solid transparent !important;
     border-radius: 0px !important;

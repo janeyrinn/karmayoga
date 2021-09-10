@@ -3,6 +3,8 @@ from .models import Contact
 
 
 class ContactAdmin(admin.ModelAdmin):
+    """ Renders the Models to the Admin Backend View"""
+
     list_display = (
         'date_sent',
         'subject',

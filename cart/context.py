@@ -5,6 +5,7 @@ from products.models import Product
 
 
 def cart_contents(request):
+    """Allows you to allocate and release items from the cart"""
 
     cart_items = []
     total = 0

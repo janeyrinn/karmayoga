@@ -61,9 +61,10 @@
             <!--Nav Logo-->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link logo-link">
-                    <h1 class="text-dark logo-text font-weight-bold"> <img class="nav-logo" src="{% static 'images/lotus.png' %}"
-                            alt="logo"> K a r m a<span class="text-dark-pink "> Y o g a</span></h1>
-                            <span class="sr-only">logo</span>
+                    <h1 class="text-dark logo-text font-weight-bold"> <img class="nav-logo"
+                            src="{% static 'images/lotus.png' %}" alt="logo"> K a r m a<span class="text-dark-pink "> Y
+                            o g a</span></h1>
+                    <span class="sr-only">logo</span>
                 </a>
             </div>
             <!--Search Bar-->
@@ -131,8 +132,9 @@
         <!--Start Main Nav-->
         <div class="row bg-dark">
             <nav class="navbar navbar-expand-lg navbar-dark w-100">
-                <button class="navbar-toggler text-white border-0" type="button" data-toggle="collapse" data-target="#main-nav"
-                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler text-white border-0" type="button" data-toggle="collapse"
+                    data-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 {% include 'includes/mobile-top-header.html' %}
@@ -167,28 +169,31 @@
         {% endblock %}
 
         <!--Start Footer -->
-    <footer>
+        <footer>
             <div class="footer-container container-fluid">
                 <div class="row bg-blue">
                     <div class="col-sm-12 col-md-4">
                         <p class="text-center hover-pink my-auto">
                             <a class="hover-pink footer-link" href="{% url 'contact' %}">Contact Us <i
-                                        class="text-white hover-pink far fa-envelope" aria-hidden="true"></i></a>
+                                    class="text-white hover-pink far fa-envelope" aria-hidden="true"></i></a>
                         </p>
                         <span class="sr-only">Contact Us</span>
                     </div>
                     <div class="col-sm-12 col-md-4 text-center">
-                        <a href="{% url 'home' %}"><img src="{% static 'images/lotus.png' %}" alt="logo" aria-hidden="true"></a>
+                        <a href="{% url 'home' %}"><img src="{% static 'images/lotus.png' %}" alt="logo"
+                                aria-hidden="true"></a>
                         <span class="sr-only">Lotus Logo</span>
                     </div>
                     <div class="col-sm-12 col-md-4">
                         <p class="text-center  my-auto ">
-                            <a class="footer-link hover-pink" rel="noreferrer" href="https://www.instagram.com/" target="_blank">Social <i
-                                    class="text-white hover-pink fab fa-instagram" aria-hidden="true"></i></a>
+                            <a class="footer-link hover-pink" rel="noreferrer" href="https://www.instagram.com/"
+                                target="_blank">Social <i class="text-white hover-pink fab fa-instagram"
+                                    aria-hidden="true"></i></a>
                         </p>
                         <span class="sr-only">Instagram</span>
                     </div>
                 </div>
+                <!--Start Copywrite Footer-->
                 <div class="row bg-dark">
                     <div class="col-sm-12">
                         <p class="text-center copyright">Copyright &copy; Jane Rinn <span id="copyright"></span></p>
@@ -196,7 +201,7 @@
                     </div>
                 </div>
             </div>
-    </footer>
+        </footer>
 
         {% block postloadjs %}
         <script>

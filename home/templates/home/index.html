@@ -2,28 +2,31 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<!--Start Header Container-->
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
-<!-- Home page hero image text overlay-->
+<!-- Home page hero image and text-->
 {% block content %}
 <div class="overlay-hero"></div>
 <div class="container h-100">
     <div class="row h-100">
-        <div class="col-7 col-md-6 my-auto" data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1000">
+        <!--Data attributes control the text transitions-->
+        <div class="col-7 col-md-6 my-auto" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
             <h1 class="display-4 text-white">
                 Refresh your Mind & Body with Yoga
             </h1>
-            <h3 class="intro-text text-white">Refresh your practice with our Organically made, Ethically sourced and Eco-Friendly products..</h3>
+            <h3 class="intro-text text-white">Refresh your practice with our Organically made, Ethically sourced and
+                Eco-Friendly products..</h3>
             <div class="my-4">
                 <h4>
-                    <a href="{% url 'products' %}" class="shop-btn btn btn-lg rounded-0 hvr-sweep-to-left lead text-uppercase py-3">Shop Now</a>
+                    <!--Shop Now Button-->
+                    <a href="{% url 'products' %}"
+                        class="shop-btn btn btn-lg rounded-0 hvr-sweep-to-left lead text-uppercase py-3">Shop Now</a>
                 </h4>
             </div>
         </div>
@@ -34,40 +37,40 @@
 {% block page_footer %}
 <!--Start Footer -->
 <footer>
-<div class="footer-container">
-    <div class="container-fluid">
-        <div class="row bg-blue">
-            <div class="col-sm-12 col-md-4">
-                <p class="text-center hover-pink my-auto">
-                    <a class="hover-pink footer-link" href="">Contact Us <a href=""><i
-                                class="text-white hover-pink far fa-envelope"></i></a>
-                </p>
+    <div class="footer-container">
+        <div class="container-fluid">
+            <div class="row bg-blue">
+                <div class="col-sm-12 col-md-4">
+                    <p class="text-center hover-pink my-auto">
+                        <a class="hover-pink footer-link" href="">Contact Us <a href=""><i
+                                    class="text-white hover-pink far fa-envelope"></i></a>
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-4 text-center">
+                    <a href=""><img src="{% static 'images/lotus.png' %}" alt="logo"></a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <p class="text-center  my-auto ">
+                        <a class="footer-link hover-pink" href="">Find us on the map <i
+                                class="text-white hover-pink fas fa-map-marker-alt"></i></a>
+                    </p>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-4 text-center">
-                <a href=""><img src="{% static 'images/lotus.png' %}" alt="logo"></a>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <p class="text-center  my-auto ">
-                    <a class="footer-link hover-pink" href="">Find us on the map <i
-                            class="text-white hover-pink fas fa-map-marker-alt"></i></a>
-                </p>
-            </div>
-        </div>
-        <div class="row bg-dark">
-            <div class="col-sm-12">
-                <p class="text-center copyright">Copyright &copy; Jane Rinn <span id="copyright"></span></p>
+            <div class="row bg-dark">
+                <div class="col-sm-12">
+                    <p class="text-center copyright">Copyright &copy; Jane Rinn <span id="copyright"></span></p>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </footer>
 {% endblock %}
 
 {% block postloadjs %}
 {{ block.super }}
-  <!--Text Animation Scripts-->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
+<!--Text Animation Scripts-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
     AOS.init();
-  </script>
+</script>
 {% endblock %}

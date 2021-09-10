@@ -33,13 +33,13 @@
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-2 ">
             <div class="card h-60 border-0 shadow p-3 mb-4 bg-white rounded">
                 <!--Start of Add/Remove Favourites-->
-                <small><a class="favourite-link float-right" href="{% url 'remove_favourite' product.id %}"><i class="remove-favourite favourite fas fa-heart mb-1 mr-1"></i></a></small>
+                <small><a class="favourite-link float-right" href="{% url 'remove_favourite' product.id %}"><i
+                            class="remove-favourite favourite fas fa-heart mb-1 mr-1"></i></a></small>
                 <!--Start Product details-->
                 <div class="row">
                     {% if product.image %}
-                    <a href="{% url 'product_detail' product.id %}"> 
-                        <img class="card-img-top img-fluid" src="{{ product.image.url }}"
-                            alt="{{ item.product.name }}">
+                    <a href="{% url 'product_detail' product.id %}">
+                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ item.product.name }}">
                     </a>
                     {% else %}
                     <a href="{% url 'product_detail' product.id %}">
@@ -101,8 +101,8 @@
             <span>Find favourites!</span>
         </a>
     </div>
-    </div>
-    {% endif %}
+</div>
+{% endif %}
 </div>
 
 <!--Back to Top Button-->

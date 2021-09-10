@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
+<!--Start Header Container-->
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -14,6 +15,7 @@
 {% endblock %}
 
 {% block content %}
+<!--Start Order Confirmation-->
     <div class="container">
         <div class="row">
             <div class="col">
@@ -69,7 +71,7 @@
                         </div>
                     </div>
                     {% endfor %}
-
+                    <!--Start of Delivery Information -->
                     <div class="row">
                         <div class="col">
                             <h3 class="text-dark-pink">Delivering To:</h3>
@@ -159,7 +161,7 @@
                             <h3 class="text-dark-pink">Billing Info:</h3>
                         </div>
                     </div>
-
+                    <!--Start of Total Costs-->
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-dark font-weight-bold">Order Total</p>
@@ -189,6 +191,7 @@
                 </div>
             </div>
         </div>
+        <!--Start Navigation Buttons-->
         <div class="row mb-5">
 			<div class="col-12 col-lg-7 text-right">
                 {% if from_profile %}
@@ -208,6 +211,7 @@
                 {% endif %}
 			</div>
 		</div>
+        <!--Start Footer Space Container-->
         <div class="row mb-5">
             <div class="col-12 mb-5">
                 <div class="spacer mb-2">

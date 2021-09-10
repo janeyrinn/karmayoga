@@ -2,62 +2,68 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'products/css/add_product.css' %}">
+<link rel="stylesheet" href="{% static 'products/css/add_product.css' %}">
 {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<!--Start Header Container-->
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <hr>
-                <h2 class="mb-4">Product Management</h2>
-                <hr>
-                <h5 class="text-dark-pink mb-2">Edit Product</h5>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <hr>
+            <h2 class="mb-4">Product Management</h2>
+            <hr>
+            <h5 class="text-dark-pink mb-2">Edit Product</h5>
         </div>
+    </div>
 
-        <div class="row">
-            <div class="col-12 col-md-6 mb-5">
-                <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {% for field in form %}
-                        {% if field.name != 'image' %}
-                            {{ field | as_crispy_field }}
-                        {% else %}
-                            {{ field }}
-                        {% endif %}
-                    {% endfor %}
-                    <div class="text-right">
-                        <a class="btn btn-gen mb-2 rounded-0" href="{% url 'product_detail' product.id %}">Cancel</a>
-                        <button class="btn btn-gen mb-2 rounded-0" type="submit">Update Product</button>
-                    </div>
-                </form>
-            </div>            
-        </div>
-        <div class="row mb-2">
-            <div class="col-12 mb-5">
-                <div class="spacer">
+    <div class="row">
+        <div class="col-12 col-md-6 mb-5">
+            <!--Start Edit Product Form-->
+            <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2"
+                enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in form %}
+                {% if field.name != 'image' %}
+                {{ field | as_crispy_field }}
+                {% else %}
+                {{ field }}
+                {% endif %}
+                {% endfor %}
+                <div class="text-right">
+                    <!--Start Navigation Buttons-->
+                    <a class="btn btn-gen mb-2 rounded-0" href="{% url 'product_detail' product.id %}">Cancel</a>
+                    <button class="btn btn-gen mb-2 rounded-0" type="submit">Update Product</button>
                 </div>
+            </form>
+        </div>
+    </div>
+    <!--Start Footer Space Container-->
+    <div class="row mb-2">
+        <div class="col-12 mb-5">
+            <div class="spacer">
             </div>
         </div>
     </div>
-    </div>
+</div>
+</div>
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super }}
-    <script>
-        $('#new-image').change(function() {
-            var file = $('#new-image')[0].files[0];
-            $('#filename').text(`Image will be set to: ${file.name}`);
-        });
-    </script>
+{{ block.super }}
+<script>
+    // JS for widget on image upload section
+    $('#new-image').change(function () {
+        var file = $('#new-image')[0].files[0];
+        $('#filename').text(`Image will be set to: ${file.name}`);
+    });
+</script>
 {% endblock %}

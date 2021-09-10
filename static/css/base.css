@@ -1,3 +1,5 @@
+/*CSS for the site as a whole*/
+
 html {
     height: 100%;
     margin: 0;
@@ -7,7 +9,7 @@ html {
 body {
     height: calc(100vh - 160px);
     color: #262626;
-    font-family: 'Josefin Slab', sans-serif;   
+    font-family: 'Josefin Slab', sans-serif;
 }
 
 .overlay-hero {
@@ -15,10 +17,10 @@ body {
     background-size: cover;
     height: 100%;
     width: 100%;
-    top:0;
+    top: 0;
     left: 0;
     position: fixed;
-    background-color:#6C748C;
+    background-color: #6C748C;
     z-index: -1;
 }
 
@@ -47,7 +49,7 @@ h3 {
 }
 
 .text-dark {
-    color:#262626 !important;
+    color: #262626 !important;
 }
 
 .text-blue {
@@ -55,7 +57,7 @@ h3 {
 }
 
 .text-dark-pink {
-    color:#f29188 !important;
+    color: #f29188 !important;
 }
 
 .border-dark {
@@ -63,14 +65,15 @@ h3 {
 }
 
 /*Class from on Git Hub Gist and customized to suit */
-input[type="text"], textarea,
+input[type="text"],
+textarea,
 select,
 input[type="email"],
 .btn {
     outline: none;
     box-shadow: none !important;
-    border:1px solid white !important;
-    }
+    border: 1px solid white !important;
+}
 
 .hover-pink:hover {
     color: #f29188 !important;
@@ -108,7 +111,7 @@ input[type="email"],
 /*--------------------------------------------BUTTONS-----------------------*/
 
 .btn-gen {
-    background: #6c748c ;
+    background: #6c748c;
     color: white;
 }
 
@@ -137,18 +140,19 @@ a.edit-btn {
     min-width: 260px;
 }
 
-.hvr-sweep-to-left::before  {
+.hvr-sweep-to-left::before {
     background-color: #F29188 !important;
 }
 
-a.category-filter-btn > span.cat-btn {
+a.category-filter-btn>span.cat-btn {
     background-color: #6c748c !important;
     color: white !important;
     border: none !important;
 }
-a.category-filter-btn > span.cat-btn:hover {
+
+a.category-filter-btn>span.cat-btn:hover {
     background-color: #F29188 !important;
-    color: white !important ;
+    color: white !important;
     border: none !important;
 }
 
@@ -168,7 +172,8 @@ a.category-filter-btn > span.cat-btn:hover {
     cursor: pointer;
 }
 
-.input-group-append .btn, .input-group-prepend .btn {
+.input-group-append .btn,
+.input-group-prepend .btn {
     position: relative;
     z-index: 0;
 }
@@ -181,7 +186,7 @@ a.category-filter-btn > span.cat-btn:hover {
 }
 
 .favourite {
-    color:#f29188 !important;
+    color: #f29188 !important;
     cursor: pointer;
     text-decoration: none !important;
 }
@@ -198,26 +203,27 @@ a.category-filter-btn > span.cat-btn:hover {
 
 /*--------------------------------------------NAVIGATION MENU-------------*/
 
-.dropdown-menu, a.dropdown-item {
+.dropdown-menu,
+a.dropdown-item {
     border-radius: 0 !important;
     background-color: #6c748c;
     color: white !important;
 }
 
 .main-header {
-    font-size:1.2rem;
+    font-size: 1.2rem;
 }
 
 .main-nav-font {
- font-size: 1rem;
- text-transform: uppercase;
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
 a.dropdown-item:hover,
 a.dropdown-item:active,
 a.dropdown-item:focus {
     color: #262626 !important;
-    background-color: white !important;  
+    background-color: white !important;
 }
 
 .nav-logo {
@@ -228,14 +234,14 @@ a.dropdown-item:focus {
     width: fit-content;
 }
 
-.logo-text{
+.logo-text {
     font-size: 1.25rem;
-} 
+}
 
 /*-------------------------------------------------FOOTER----------*/
 
 footer {
-    background-color: #6c748c ;
+    background-color: #6c748c;
     color: white;
     bottom: 0;
     width: 100%;
@@ -250,9 +256,9 @@ footer {
 
 footer img {
     width: 3rem;
-  }
+}
 
- footer p {
+footer p {
     font-size: 1.2rem;
     margin: 0;
     padding: 5px 0 0px 0;
@@ -283,25 +289,26 @@ footer img {
 
 @media (min-width: 1000px) {
     .container {
-      max-width: 80%;
+        max-width: 80%;
     }
-      .header-container {
-          padding-top: 160px;
-      }
 
-      .cart-btn {
+    .header-container {
+        padding-top: 160px;
+    }
+
+    .cart-btn {
         margin-bottom: 4rem;
     }
-      
+
     .display-4.text-white {
         font-size: 3.5rem;
         margin-top: 10px;
         margin-right: 125px;
     }
-  }
+}
 
 /* Media Query to handle responsivity on medium mobile screens */
- @media (max-width: 991px) {
+@media (max-width: 991px) {
     .header-container {
         padding-top: 90px;
     }
@@ -311,14 +318,14 @@ footer img {
     }
 
     footer p {
-    font-size: .75rem;
-    margin: 0;
-    padding: 5px 0 0px 0;
+        font-size: .75rem;
+        margin: 0;
+        padding: 5px 0 0px 0;
     }
 
     ul {
-    padding: 0;
-    margin: 0;
+        padding: 0;
+        margin: 0;
     }
 
     body {
@@ -336,7 +343,7 @@ footer img {
 
     }
 
-    .intro-text{
+    .intro-text {
         font-size: 1rem;
     }
 
@@ -367,7 +374,8 @@ footer img {
         font-size: .75rem;
     }
 
-    .increment-qty, .decrement-qty {
+    .increment-qty,
+    .decrement-qty {
         padding: .25rem .5rem !important;
     }
 
@@ -381,43 +389,45 @@ footer img {
         display: none;
     }
 
+}
+
+/*Media Query to handle responsivity on smaller screens*/
+@media (max-width: 380px) {
+
+    .header-container {
+        padding-top: 50px;
     }
 
-    @media (max-width: 380px) {
-
-        .header-container {
-            padding-top: 50px;
-        }
-
-        .display-4.text-white {
-            font-size: 1.5rem;
-            margin-top: 50px;
-            margin-right: 25px;
-        }
-
-        .intro-text{
-            font-size: 1rem;
-        }
-
-        .shop-btn {
-            color: white;
-            border: solid 1px white;
-            min-width: 160px;
-            font-size: 1rem;
-        }
-
-        
-        .navbar {
-            padding: 0;
-        }
-
-        .allauth-form-inner-content p {
-            margin-top: .5rem !important; 
-            margin-bottom: .5rem !important; 
-            color: #262626; 
-        }
-
+    .display-4.text-white {
+        font-size: 1.5rem;
+        margin-top: 50px;
+        margin-right: 25px;
     }
+
+    .intro-text {
+        font-size: 1rem;
+    }
+
+    .shop-btn {
+        color: white;
+        border: solid 1px white;
+        min-width: 160px;
+        font-size: 1rem;
+    }
+
+
+    .navbar {
+        padding: 0;
+    }
+
+    .allauth-form-inner-content p {
+        margin-top: .5rem !important;
+        margin-bottom: .5rem !important;
+        color: #262626;
+    }
+
+}
+
 /*--------------------------------------------TOASTS/MESSAGES---------------------*/
 
 .message-container {
@@ -438,10 +448,10 @@ footer img {
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
+    border-right: 4px solid transparent;
     border-bottom: 10px solid #262626;
     position: absolute;
     top: -10px;
@@ -490,13 +500,18 @@ footer img {
 /*--------------------------------------------ALL AUTH-----------------------*/
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #262626; /* text-secondary */
+    margin-top: 1.5rem;
+    /* mt-4 */
+    color: #262626;
+    /* text-secondary */
 }
 
-.allauth-form-inner-content input[type='text'], 
-#id_password, #id_password1, #id_password2,
-#id_email, #id_email2 {
+.allauth-form-inner-content input[type='text'],
+#id_password,
+#id_password1,
+#id_password2,
+#id_email,
+#id_email2 {
     box-sizing: border-box !important;
     height: 40px !important;
     padding: 10px 12px !important;
@@ -507,7 +522,7 @@ footer img {
     -webkit-transition: box-shadow 150ms ease !important;
     transition: box-shadow 150ms ease !important;
     width: 100%;
-    
+
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -520,8 +535,8 @@ footer img {
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
+    /* btn */
+    display: inline-block;
     font-weight: 400;
     text-align: center;
     vertical-align: middle;
@@ -533,15 +548,15 @@ footer img {
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0;
-    
+
     color: white;
 
     /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
+.allauth-form-inner-content input[type='submit']:hover {
     background: #F29188;
     color: white;
 }
@@ -573,4 +588,3 @@ footer img {
     border-color: #6c748c;
     border-radius: 0;
 }
-

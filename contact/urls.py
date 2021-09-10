@@ -2,7 +2,7 @@ from django.urls import path
 from . import views
 
 
-# Contact app URLs
+""" URL Patterns to open template views"""
 urlpatterns = [
     path('', views.contact, name='contact'),
 ]

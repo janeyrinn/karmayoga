@@ -13,7 +13,7 @@ def view_cart(request):
 
 
 def add_to_cart(request, item_id):
-    """ A view add product(s) to shopping cart """
+    """ A view to add product(s) to shopping cart """
 
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
@@ -32,7 +32,7 @@ def add_to_cart(request, item_id):
 
 
 def edit_cart(request, item_id):
-    """ Edit quantities of products in the shopping cart """
+    """Edit quantities of products in the shopping cart """
 
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
@@ -50,17 +50,15 @@ def edit_cart(request, item_id):
 
 
 def remove_from_cart(request, item_id):
-    """
-    Remove an item from the shopping cart
-    """
+    """ Remove an item from the shopping cart """
 
     try:
         product = get_object_or_404(Product, pk=item_id)
         cart = request.session.get('cart', {})
-        
+
         cart.pop(item_id)
         messages.success(request, f'Removed {product.name} from cart')
-        
+
         request.session['cart'] = cart
         return HttpResponse(status=200)
 

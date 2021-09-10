@@ -1,31 +1,37 @@
+/*CSS Specific to the Check Out Feature*/
+
 .fieldset-label {
-    position: relative;
-    right: .5rem;
+  position: relative;
+  right: .5rem;
 }
 
-#payment-form, .form-control,
+#payment-form,
+.form-control,
 #card-element {
-    color: #262626;
+  color: #262626;
 }
 
 .form-container {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 select,
 select option {
-    color: #000000;
+  color: #000000;
 }
 
 select:invalid,
 select option[value=""] {
-    color: #f29188 !important;
+  color: #f29188 !important;
 }
 
 /* CSS taken from CI Boutique Ado and customized*/
 .StripeElement,
 .stripe-style-input,
-input[type="text"], textarea, select, input[type="email"] {
+input[type="text"],
+textarea,
+select,
+input[type="email"] {
   box-sizing: border-box !important;
   height: 40px !important;
   padding: 10px 12px !important;
@@ -48,17 +54,17 @@ input[type="text"], textarea, select, input[type="email"] {
 }
 
 .stripe-style-input::placeholder {
-    color: #6c748c;
+  color: #6c748c;
 }
 
 #loading-overlay {
   display: none;
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(242,169,153, .75);
+  background-color: rgb(242, 169, 153, .75);
   z-index: 9999;
 }
 
@@ -70,4 +76,3 @@ input[type="text"], textarea, select, input[type="email"] {
   height: 100%;
   color: white;
 }
-

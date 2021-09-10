@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block page_header %}
+<!--Start Header Container-->
 <div class="container header-container">
     <div class="row">
         <div class="col"></div>
@@ -12,6 +13,7 @@
 {% block content %}
 <div class="container-fluid mb-5">
     <div class="row mb-5">
+        <!--Start Product Detail-->
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="image-container my-2 shadow p-3 mb-4 bg-white rounded ">
                 {% if product.image %}
@@ -38,13 +40,16 @@
                 {% endif %}
                 <!--Start of Add/Remove Favourites-->
                 {% if request.user.is_authenticated %}
-                    {% if favourited %}
-                    <small><a class="favourite-link" id="removeFavourite" href="{% url 'remove_favourite' product.id %}"><i class="favourite fas fa-heart mb-1 mr-1"></i></a></small>
-                    {% else %}
-                    <small><a class="favourite-link" id="addFavourite" href="{% url 'add_favourite' product.id %}"><i class="empty-favourite far fa-heart mb-1 mr-1"></i></a></small>
-                    {% endif %}
+                {% if favourited %}
+                <small><a class="favourite-link" id="removeFavourite" href="{% url 'remove_favourite' product.id %}"><i
+                            class="favourite fas fa-heart mb-1 mr-1"></i></a></small>
+                {% else %}
+                <small><a class="favourite-link" id="addFavourite" href="{% url 'add_favourite' product.id %}"><i
+                            class="empty-favourite far fa-heart mb-1 mr-1"></i></a></small>
+                {% endif %}
                 {% endif %}
                 <h2 class="mt-3">{{ product.description }}</h2>
+                <!--Start of Quantity Controls-->
                 <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                     {% csrf_token %}
                     <div class="form-row">
@@ -76,6 +81,7 @@
                                 </div>
                             </div>
                             {% if request.user.is_superuser %}
+                            <!--Start Admin Edit/Delete Controls-->
                             <small class="">
                                 <button type="button" class="edit-btn rounded-0 border-0"><a
                                         href="{% url 'edit_product' product.id %}">Edit</a></button>
@@ -85,7 +91,7 @@
                             </small>
                             {% endif %}
                         </div>
-
+                        <!--Start Nav Buttons-->
                         <div class="col-12">
                             <a href="{% url 'products' %}" class="btn btn-gen rounded-0">
                                 <span class="icon">

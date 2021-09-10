@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block page_header %}
+<!--Start Header Container-->
 <div class="container header-container">
     <div class="row">
         <div class="col"></div>
@@ -9,7 +10,7 @@
 </div>
 {% endblock %}
 
-<!--all products-->
+<!--Start all products-->
 {% block content %}
 <div class="container-fluid">
     <div class="row">
@@ -24,13 +25,13 @@
             <hr class="w-50 mb-1">
         </div>
     </div>
+    <!--Start Sort/Filter Feature-->
     <div class="row">
         <div class="product-container col-10 offset-1">
             <div class="row mt-3 mb-1">
                 <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="sort-select-wrapper w-50">
-                        <select id="sort-selector"
-                            class="custom-select custom-select-sm rounded-0 border">
+                        <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border">
                             <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
                             </option>
                             <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price
@@ -57,6 +58,7 @@
                     </p>
                 </div>
             </div>
+            <!--Start Product Cards-->
             <div class="row mb-5">
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-2">
@@ -92,6 +94,7 @@
                         </div>
                     </div>
                 </div>
+                <!--Start HR tag styling-->
                 {% if forloop.counter|divisibleby:1 %}
                 <div class="col-12 d-sm-none mb-3">
                     <hr>
@@ -117,6 +120,7 @@
         </div>
     </div>
 </div>
+<!--Start back to top button-->
 <div class="btt-btn bg-pink shadow-sm">
     <a class="btt-link d-flex h-100">
         <i class="fas fa-arrow-alt-circle-up text-white mx-auto my-auto"></i>
@@ -127,6 +131,7 @@
 
 {% block postloadjs %}
 {{ block.super }}
+<!--Controls back to top button-->
 <script>
     // snippet learnt and adapted from codex world
     $(window).scroll(function () {

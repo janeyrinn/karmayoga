@@ -1,3 +1,5 @@
+/*CSS specific to the profile*/
+
 #profile-update-form .form-control {
     color: #262626;
 }
@@ -22,13 +24,12 @@
 
 #id_default_country,
 #id_default_country option:not(:first-child) {
-    color: #262626 ;
+    color: #262626;
 }
 
 #id_default_country option:first-child {
-    color: #f29188 ;
+    color: #f29188;
 }
-
 
 .order-history {
     max-height: 416px;

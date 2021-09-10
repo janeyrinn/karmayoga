@@ -1,6 +1,11 @@
-.form input[type="text"], #id_description,
-#id_category, #id_price,
-#id_image_url, #id_image {
+/*CSS Specific to the products page*/
+
+.form input[type="text"],
+#id_description,
+#id_category,
+#id_price,
+#id_image_url,
+#id_image {
     box-sizing: border-box !important;
     padding: 10px 12px !important;
     border: 1px solid transparent !important;

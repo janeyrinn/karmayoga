@@ -3,6 +3,8 @@ from .models import Order, OrderLineItem
 
 
 class OrderLineItemAdminInline(admin.TabularInline):
+    """ Renders the Models to the Admin Backend View"""
+
     model = OrderLineItem
     readonly_fields = ('lineitem_total',)
 
@@ -28,5 +30,6 @@ class OrderAdmin(admin.ModelAdmin):
                     'stripe_pid')
 
     ordering = ('-date',)
+
 
 admin.site.register(Order, OrderAdmin)
