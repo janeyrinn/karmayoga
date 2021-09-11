@@ -606,10 +606,12 @@ The 'repo' should then open and you can begin working on it by selecting the gre
 >* os.environ.setdefault("STRIPE_SECRET_KEY", "`ADD YOUR KEY`")
 >* os.environ.setdefault("STRIPE_PUBLIC_KEY", "`ADD YOUR KEY`")
 >* os.environ.setdefault("STRIPE_WH_SECRET", "`ADD YOUR KEY`")
-9. Apply migrations
-10. Create your super user
-11. To view what the code will look like in a browser from here type "python3 manage.py runserver" into the console and hit enter or replace "manage.py" with which ever you have named the app
-12. A pop-up will appear stating "A service is available on Port 8080" select Open Browser
+9. add the following to your settings.py 
+>* if os.path.exists("env.py"): import env
+10. Apply migrations
+11. Create your super user
+12. To view what the code will look like in a browser from here type "python3 manage.py runserver" into the console and hit enter or replace "manage.py" with which ever you have named the app
+13. A pop-up will appear stating "A service is available on Port 8080" select Open Browser
 
 ## Credits
 
