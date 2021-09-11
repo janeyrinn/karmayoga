@@ -334,27 +334,31 @@ Future features will include:
  - [JavaScript](https://www.w3schools.com/js/js_intro.asp) for interactive elements
  - [Python](https://www.w3schools.com/python/python_intro.asp) for backend, a full list of the modules used can be found in the requirements.txt file
 The below python modules were used and are fundamental to the project
-> * asgiref==3.4.1
-> * boto3==1.18.36
-> * botocore==1.21.36
-> * dj-database-url==0.5.0
-> * Django==3.2.6
-> * django-allauth==0.45.0
-> * django-countries==7.2.1
-> * django-crispy-forms==1.12.0
-> * django-storages==1.11.1
-> * gunicorn==20.1.0
-> * jmespath==0.10.0
-> * oauthlib==3.1.1
-> * Pillow==8.3.1
-> * psycopg2-binary==2.9.1
-> * PyJWT==2.1.0
-> * python3-openid==3.2.0
-> * pytz==2021.1
-> * requests-oauthlib==1.3.0
-> * s3transfer==0.5.0
-> * sqlparse==0.4.1
-> * stripe==2.60.0
+```
+asgiref==3.4.1
+boto3==1.18.36
+botocore==1.21.36
+dj-database-url==0.5.0
+Django==3.2.6
+django-allauth==0.45.0
+django-countries==7.2.1
+django-crispy-forms==1.12.0
+django-storages==1.11.1
+gunicorn==20.1.0
+jmespath==0.10.0
+oauthlib==3.1.1
+Pillow==8.3.1
+psycopg2-binary==2.9.1
+PyJWT==2.1.0
+pylint-django==2.4.4
+pylint-plugin-utils==0.6
+python3-openid==3.2.0
+pytz==2021.1
+requests-oauthlib==1.3.0
+s3transfer==0.5.0
+sqlparse==0.4.1
+stripe==2.60.0
+```
   ### Frameworks and Libraries
 
 - [DJango](https://www.djangoproject.com/) functionality of the backend.
