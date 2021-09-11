@@ -1,10 +1,10 @@
-from django.shortcuts import (render, redirect,
-                              reverse)
+"""Imports"""
+from django.shortcuts import render
 from django.contrib import messages
-from .forms import ContactForm
-from django.conf import settings
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
+from django.conf import settings
+from .forms import ContactForm
 
 
 def contact(request):
@@ -18,7 +18,7 @@ def contact(request):
             messages.success(request, 'Message Sent!')
 
             instance = form.save()
-            """ Sends an email to confirm contact recieved """
+
             sender_email = instance.email
             subject = render_to_string(
                 'contact/confirmation_emails/subject_contact_email.txt',

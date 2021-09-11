@@ -1,8 +1,9 @@
 from django.urls import path
 from . import views
 
-""" URL Patterns to open template views"""
+
 urlpatterns = [
+    """ URL Patterns to open template views"""
     path('', views.view_cart, name='view_cart'),
     path('add/<item_id>', views.add_to_cart, name='add_to_cart'),
     path('edit/<item_id>', views.edit_cart, name='edit_cart'),
