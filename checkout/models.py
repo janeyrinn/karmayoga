@@ -1,3 +1,5 @@
+"""Imports"""
+
 import uuid
 
 from django.db import models
@@ -80,6 +82,7 @@ class Order(models.Model):
 
 
 class OrderLineItem(models.Model):
+    """ Create line item for orders """
     order = models.ForeignKey(
         Order, null=False, blank=False,
         on_delete=models.CASCADE, related_name='lineitems')
