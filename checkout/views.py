@@ -1,3 +1,4 @@
+"""Imports"""
 from django.shortcuts import (render, redirect, reverse,
                               get_object_or_404, HttpResponse)
 from django.views.decorators.http import require_POST
