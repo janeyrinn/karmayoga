@@ -396,7 +396,7 @@ _General sources of information for structure functionality and styling._
 
 ## Testing
 
-A full testing report can be found [here]()
+A full testing report can be found [here](testing/testing.xlsx)
 
 To test the payments functionality of the site you will need the below test credit card numbers from the [Stripe Documentation](https://stripe.com/docs/testing):
 
@@ -412,7 +412,7 @@ The syntax and validity of the HTML and JavaScript code used were passed through
 The python was run with pylint in the terminal. Errors were ammended to bring the score to 9.09. On going error explanations can be found in the testing document linked above.
 Python code is PeP8 compliant.
 
-![pylint](read-me/pylint.png)
+![pylint](testing/pylint.png)
 
 ### Testing Premise
 The entire site was tested under the three premises of :
@@ -457,24 +457,24 @@ Bugs found in the code and their fixes can also be found in the Excel document.
 
 The live site was also analysed using Google Developer Tools Lighthouse feature which it scored high for performance, accessibility, and SEO. Best practices also rates highly but was compromised by using third party JavaScript libraries.
 
-![Light House Score](read-me/lighthouse.png)
+![Light House Score](testing/lighthouse.png)
 ### User Stories
-![anon user](read-me/anon-user.png)
-![registered user](read-me/registered-user.png)
-![admin user](read-me/admin-user.png)
+![anon user](testing/anon-user.png)
+![registered user](testing/registered-user.png)
+![admin user](testing/admin-user.png)
 ### Features
-![feat-one](read-me/feat-one.png)
-![feat-two](read-me/feat-two.png)
+![feat-one](testing/feat-one.png)
+![feat-two](testing/feat-two.png)
 
 ### Functionality
-![functionality-one](read-me/functionality-one.png)
-![functionality-two](read-me/functionality-two.png)
-![functionality-three](read-me/functionality-three.png)
-![functionality-four](read-me/functionality-four.png)
+![functionality-one](testing/functionality-one.png)
+![functionality-two](testing/functionality-two.png)
+![functionality-three](testing/functionality-three.png)
+![functionality-four](testing/functionality-four.png)
 
 ### Bugs & Fixes
-![bugs-one](read-me/bugs-one.png)
-![bugs-two](read-me/bugs-two.png)
+![bugs-one](testing/bugs-one.png)
+![bugs-two](testing/bugs-two.png)
 ## Final Comments
 
 ## Deployment
