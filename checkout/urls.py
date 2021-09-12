@@ -3,7 +3,7 @@ from django.urls import path
 from . import views
 from .webhooks import webhook
 
-""" URL Patterns to open template views"""
+
 urlpatterns = [
     path('', views.checkout, name='checkout'),
     path('wh/', webhook, name='webhook'),
