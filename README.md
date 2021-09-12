@@ -467,6 +467,10 @@ The live site was also analysed using Google Developer Tools Lighthouse feature 
 ![feat-two](read-me/feat-two.png)
 
 ### Functionality
+![functionality-one](read-me/functionality-one.png)
+![functionality-two](read-me/functionality-two.png)
+![functionality-three](read-me/functionality-three.png)
+![functionality-four](read-me/functionality-four.png)
 
 ### Bugs & Fixes
 
