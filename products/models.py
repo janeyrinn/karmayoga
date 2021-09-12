@@ -31,7 +31,6 @@ class Product(models.Model):
     sku = models.CharField(max_length=100, null=True, blank=True)
     price = models.DecimalField(max_digits=6, null=True,
                                 decimal_places=2)
-    image_url = models.URLField(max_length=2000, null=True)
     image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
