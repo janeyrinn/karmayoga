@@ -154,7 +154,7 @@ A mock-up of how the site will be laid out is available here via [Wire Frames](r
 
 ### Database Structure
 
-![Database Structure]()
+![Database Structure](read-me/database-diagram-image.png)
 
 #### Data Models
 
