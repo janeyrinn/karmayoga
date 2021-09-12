@@ -459,7 +459,9 @@ The live site was also analysed using Google Developer Tools Lighthouse feature 
 
 ![Light House Score](read-me/lighthouse.png)
 ### User Stories
-
+![anon user](read-me/anon-user.png)
+![registered user](read-me/registered-user.png)
+![admin user](read-me/admin-user.png)
 ### Features
 
 ### Functionality
