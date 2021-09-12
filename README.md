@@ -396,6 +396,8 @@ _General sources of information for structure functionality and styling._
 
 ## Testing
 
+A full testing report can be found [here]()
+
 To test the payments functionality of the site you will need the below test credit card numbers from the [Stripe Documentation](https://stripe.com/docs/testing):
 
 >* Number: 4242 4242 4242 4242  
@@ -407,7 +409,11 @@ The syntax and validity of the HTML and JavaScript code used were passed through
 - [JS Hint](https://jshint.com/)
 - [W3c Jigsaw](https://jigsaw.w3.org/css-validator/)
 
-The python was run with pylint in the terminal. Errors were ammended to bring the score 
+The python was run with pylint in the terminal. Errors were ammended to bring the score to 9.09. On going error explanations can be found in the testing document linked above.
+Python code is PeP8 compliant.
+
+![pylint](read-me/pylint.png)
+
 ### Testing Premise
 The entire site was tested under the three premises of :
 
