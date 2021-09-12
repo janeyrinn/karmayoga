@@ -1,6 +1,6 @@
 Hello {{ order.full_name }}!
 
-Your order has been recieved and is just days away from levelling up your next practice!
+Your order has been recieved and is just days away from leveling up your next practice!
 
 Your order information is below:
 
