@@ -463,6 +463,8 @@ The live site was also analysed using Google Developer Tools Lighthouse feature 
 ![registered user](read-me/registered-user.png)
 ![admin user](read-me/admin-user.png)
 ### Features
+![feat-one](read-me/feat-one.png)
+![feat-two](read-me/feat-two.png)
 
 ### Functionality
 
