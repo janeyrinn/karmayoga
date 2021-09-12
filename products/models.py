@@ -28,11 +28,11 @@ class Product(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    sku = models.CharField(max_length=100, default='Blank', blank=True)
-    price = models.DecimalField(max_digits=6, default='Blank',
+    sku = models.CharField(max_length=100, null=True, blank=True)
+    price = models.DecimalField(max_digits=6, null=True,
                                 decimal_places=2)
-    image_url = models.URLField(max_length=2000, default='blank', blank=True)
-    image = models.ImageField(null=True, default='blank', blank=True)
+    image_url = models.URLField(max_length=2000, null=True)
+    image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
         return self.name
