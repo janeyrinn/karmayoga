@@ -34,7 +34,6 @@ The live site can be accessed [*here*](https://karmayoga-ecommerce-store.herokua
     * [Testing Premise](#testing-premise)
     * [Functionality](#functionality)
     * [Bugs and Fixes](#bugs-and-fixes)
-    * [Final Comments](#final-comments)
 6. [Deployment](#deployment)
     * [Deployment via Heroku](#deployment-via-heroku)
     * [Make a clone on GitPod](#make-a-clone-on-gitpod) 
@@ -475,7 +474,6 @@ The live site was also analysed using Google Developer Tools Lighthouse feature 
 ### Bugs & Fixes
 ![bugs-one](testing/bugs-one.png)
 ![bugs-two](testing/bugs-two.png)
-## Final Comments
 
 ## Deployment
 
