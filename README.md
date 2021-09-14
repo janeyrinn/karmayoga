@@ -474,6 +474,7 @@ The live site was also analysed using Google Developer Tools Lighthouse feature 
 ### Bugs & Fixes
 ![bugs-one](testing/bugs-one.png)
 ![bugs-two](testing/bugs-two.png)
+![bugs-three](testing/bugs-three.png)
 
 ## Deployment
 
