@@ -1,9 +1,10 @@
 """Imports"""
 from django.db import models
-from products.models import Product
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+
+from products.models import Product
 
 
 class Favourites(models.Model):
@@ -29,7 +30,7 @@ def create_favourite_list(sender, instance, created, **kwargs):
     if created:
         Favourites.objects.create(user=instance)
     # Existing users: just save the favourites
-        instance.favourites.save()
+    instance.favourites.save()
 
 
 class FavouritedItem(models.Model):
