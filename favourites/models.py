@@ -30,7 +30,7 @@ def create_favourite_list(sender, instance, created, **kwargs):
     if created:
         Favourites.objects.create(user=instance)
     # Existing users: just save the favourites
-    instance.favourites.save()
+        instance.favourites.save()
 
 
 class FavouritedItem(models.Model):
