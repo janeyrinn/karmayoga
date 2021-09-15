@@ -14,7 +14,7 @@ class Favourites(models.Model):
     """A Model to store users favourited items"""
 
     class Meta:
-        verbose_name = 'Favourites'
+        verbose_name_plural = 'Favourites'
 
     user = models.OneToOneField(
         User, on_delete=models.CASCADE)
