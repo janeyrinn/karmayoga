@@ -134,6 +134,11 @@ The products page will display all products and can be sorted or filtered.
 
 The product detail page will display the image and details with an option to purchase, favourite or update/delete for the admin user.
 
+The cart page will display items in the cart, subtotals, delivery cost, grand total and an option to update quantities in the cart.
+
+The checkout page will display and order summary, a user information form and stripe inputs.
+
+The successful checkout page will display an order summary and a message stating the summary has been emailed to the address provided.
 
 **Interaction Design**
 
