@@ -533,7 +533,7 @@ The 'repo' should then open and you can begin working on it by selecting the gre
     - USE_AWS = True
 
 16. Hide Con Fig Vars and reopen the deploy tab
-17. Add an commit your changes in the CLI, then use the below to to deploy to Heroku :
+17. Add and commit your changes in the CLI, then use the below to to deploy to Heroku :
 >* git push Heroku master
 18. You will then need to connect your GitHub Repository, in the deploy tab, under method, select "Connect to GitHub". Connect your GitHub account, ensure the correct profile name is displayed. Then add your repository name, search and select the correct repository.
 19. Under automatic deployment, enable automatic deployment.
