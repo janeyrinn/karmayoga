@@ -168,12 +168,12 @@ A mock-up of how the site will be laid out is available here via [Wire Frames](r
 - The product model creates objects containing individual product information, such as name, description, price, image and sku. 
 - The unique ID is auto generated. 
 - The product objects will be used for the order model and favourites model.
-- The product model is lonked to the categories model which divides the products into subsections.
+- The product model is linked to the categories model which divides the products into subsections.
 
 ##### User Profile & User
 
 - The User model is created by django All Auth on registration, it stores the name, email and password of a user.
-- The User Profile model creates and instance of the user information in the database, similar to above as an object. 
+- The User Profile model uses the user information in the database, similar to above as an object. 
 - The User Profile is linked to the User model. 
 - The user Profile stores shipping and contact information.
 
@@ -194,7 +194,7 @@ A mock-up of how the site will be laid out is available here via [Wire Frames](r
 
 ### Security
 
-Sensitive data such as SECRET_KEYS were stored on heroku using config variables to prevent unwanted connections to the database.
+Sensitive data such as SECRET_KEYS were stored on heroku using config variables to prevent unwanted connections to the database. This information was also stored in an env.py file for the development environment, which was kept private by including it in the gitignore file, preventing it being pushed to GitHub.
 
 Django allauth was used to set up user authentication and built in decorators allowed restricted access to certain features on the website.
 
