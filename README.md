@@ -231,7 +231,7 @@ For a detailed list of photographic image sources please see the [credits](#cred
 1. Responsive to different screen sizes.
 2. Supported by Chrome, Opera, and Firefox browsers.
 3. Adapted for users with special accessibility requirements where possible.
-4. There will be multiple pages: Landing page, all products page, product detail page, shopping bag, checkout page, successfull check out page, profile page, login page, sign up page, delete/edit product page, contact form page, favourites page, 404 error and 500 error page.
+4. There will be multiple pages: Landing page, all products page, product detail page, cart, checkout page, successfull check out page, profile page, login page, sign up page, delete/edit product page, contact form page, favourites page, 404 error and 500 error page.
 
         - Each page will have a navigation header
         - Each page will have a footer
@@ -248,7 +248,7 @@ For a detailed list of photographic image sources please see the [credits](#cred
         - On mobile devices, the menu items will switch to a toggle button and slide down the page when button is clicked
         - The mobile nav will not have 'on-hover' styling
         - Anon users will see my account(signup/register), search bar, shopping cart total, all products, contact page, equipment and classes page 
-        - Registered users will see the above mentioned with an additional profile tab and log out option under the 'my account' nav item
+        - Registered users will see the above mentioned with an additional profile and favourites tab and log out option under the 'my account' nav item
 
  6. The home page will have:
 
@@ -286,7 +286,7 @@ For a detailed list of photographic image sources please see the [credits](#cred
         - Edit/Delete link for the admin user only
         - Toast messages displaying successfull/unsuccessful addition of products to the shopping bag
 
-11. The shopping bag page will have:
+11. The cart page will have:
 
         - Images and descriptions of products
         - Option to edit quantity or remove products
@@ -308,7 +308,7 @@ For a detailed list of photographic image sources please see the [credits](#cred
 
         - Has cards displaying favourited items that link to product detail view.
         - Heart icons on the cards that allow removal.
-        - If emptry a navigation button to the all products page.
+        - If empty a navigation button to the all products page.
         - Toast messages to convey successful or unsuccessful removal of items.
 
 15. The contact form page will have a form with fields for:
@@ -320,9 +320,9 @@ For a detailed list of photographic image sources please see the [credits](#cred
         - Submission button
         - Toast messages to convey successful or unsuccessful submission of the form.
 
-16. All users interactions will either be confirmed or notified of an error either via on screen messages, orders, contact forms and profile set up will be also confirmed via email.
+16. All users interactions will either be confirmed or notified of an error either via on screen messages. Orders, contact forms and profile set up will be also be confirmed via email.
 
-17. All products page and the cart page will have a scroll to top button.
+17. The products page and the cart page will have a scroll to top button.
 ### Future Features
 
 Future features will include:
