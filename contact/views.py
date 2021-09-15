@@ -37,8 +37,7 @@ def contact(request):
                 request,
                 'Error, please check the form is valid')
 
-    else:
-        form = ContactForm()
+    form = ContactForm()
 
     template = 'contact/contact.html'
     context = {
