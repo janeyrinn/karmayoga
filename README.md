@@ -451,7 +451,7 @@ Testing was done on three browsers; Chome v93 , Opera 78 and FireFox v91 on the 
 >* iPhone XR (414 x 896)
 >* Laptop (1440 x 900)
 
-Testing was documented using Microsoft Excel and the full spreadsheet can be found [here](). 
+Testing was documented using Microsoft Excel and the full spreadsheet can be found [here](testing/testing.xlsx). 
 Bugs found in the code and their fixes can also be found in the Excel document.
 
 The live site was also analysed using Google Developer Tools Lighthouse feature which it scored high for performance, accessibility, and SEO. Best practices also rates highly but was compromised by using third party JavaScript libraries.
@@ -651,4 +651,4 @@ The 'repo' should then open and you can begin working on it by selecting the gre
 
 3. A thank you to **Daisy McGirr** for her assistance with deployment.
 
-4. Last but not least a resounding thank you to **Jo, Sean, John and Scott** on the CI tutoring team for their assistance and unfailing good natured humour no matter the situation.
+4. Last but not least a resounding thank you to **Jo, Johann, Sean, John, Igor and Scott** on the CI tutoring team for their assistance and unfailing good natured humour no matter the situation.
