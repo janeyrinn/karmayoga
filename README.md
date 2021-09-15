@@ -2,7 +2,7 @@
 
 Karma Yoga is an e-commerce web application developed as part of 
 [*Code Institute, Diploma in Full Stack Software Development*](https://codeinstitute.net/full-stack-software-development-diploma/).
-It is the final milestone project in a series of four projects. No revenue has been generated from this site and is for project purposes only.
+It is the final milestone project in a series of four projects. **No revenue has been generated from this site and is for project purposes only.**
 
 The live site can be accessed [*here*](https://karmayoga-ecommerce-store.herokuapp.com/).
 
@@ -83,7 +83,7 @@ A registered users goals are in addition to the above mentioned user goals.
 | **As a registered consumer I would like to ** : |  **So that I can**  : |
 | ------------- |:-------------:|
 | save my information to a profile | use it again easily |
-| recieve an email confirmation of my registration | verify succesful registration |
+| recieve an email confirmation of my registration/contact/order | verify succesful completion of tasks |
 | easily login and logout | to keep my info secure |
 | reset a lost password | recover access to my account |
 | edit my profile | manage my information |
@@ -97,7 +97,7 @@ A registered users goals are in addition to the above mentioned user goals.
 |  have an informative web application | use it as an e-commerce tool |
 |  sell products | generate revenue |
 |  have a record of user information | use it for marketing and other business purposes |
-|  have a contact form on the app | manage enquiries via email only |
+|  have a contact form on the app | manage enquiries via the admin panel |
 |  upload, edit and delete products through the frontend | manage stock and product/service offering over time |
 
 ## Design
@@ -133,6 +133,7 @@ The favourite products page will display favourited items with options to remove
 The products page will display all products and can be sorted or filtered.
 
 The product detail page will display the image and details with an option to purchase, favourite or update/delete for the admin user.
+
 
 **Interaction Design**
 
