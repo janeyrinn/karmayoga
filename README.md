@@ -537,7 +537,7 @@ The 'repo' should then open and you can begin working on it by selecting the gre
 >* git push Heroku master
 18. You will then need to connect your GitHub Repository, in the deploy tab, under method, select "Connect to GitHub". Connect your GitHub account, ensure the correct profile name is displayed. Then add your repository name, search and select the correct repository.
 19. Under automatic deployment, enable automatic deployment.
-20. You can now deploy via the heroku dashboard by clicking the `open app` button. At this stage your site have deployed with out any static files.
+20. You can now deploy via the heroku dashboard by clicking the `open app` button. At this stage your site has deployed with out any static files.
 
 ### AWS S3 Bucket 
 1. Create your AWS account
