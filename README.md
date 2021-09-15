@@ -330,7 +330,7 @@ Future features will include:
 >   * A subscription feature to view/access online classes and workshops
 >   * A chat forum for members of workshops, classes or training courses
 >   * The favourites model will be combined into one model and linked to the user profile. This was unable to be achieved before submission due to time constraints.
->   * The contact form will prepopulate user information if logged in and inputs will clear on submit. This was unable to be achieved before submission due to time constraints.
+>   * The contact form will prepopulate user information if logged in. This was unable to be achieved before submission due to time constraints.
 
 ## Technologies
 
