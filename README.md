@@ -40,7 +40,6 @@ The live site can be accessed [*here*](https://karmayoga-ecommerce-store.herokua
 7. [Credits](#credits)
     * [Images](#Images)
     * [Code](#Code)
-    * [Content](#Content)
     * [Acknowledgements](#Acknowledgements)
 ## Strategic Purpose Overview
 
